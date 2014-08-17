@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Window">
+      <UniqueIdentifier>{64e964b8-ad4a-4db5-b370-9f034a2bca2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataBase">
+      <UniqueIdentifier>{90c1b239-9e51-4ca7-a6bc-0814204f30de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataBase\DBSet">
+      <UniqueIdentifier>{89fc41e1-1929-41e5-ad71-dc8927d6575c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol">
+      <UniqueIdentifier>{e42606bb-9947-4264-bc9a-0a8a3358c5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{84b78bd8-4c78-4329-8551-7608c4ed3493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Queue">
+      <UniqueIdentifier>{25c25d47-faad-4ddd-bc4d-429b13a302e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\IOCP">
+      <UniqueIdentifier>{b36c05e3-a6a9-4c66-836f-b70aadb4b82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include">
+      <UniqueIdentifier>{7414f70c-9099-4bf8-aca3-75660ddfd80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other">
+      <UniqueIdentifier>{fc5038e9-ef5b-4815-9686-b0922c56e63f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings">
+      <UniqueIdentifier>{547a18a2-4c36-431a-8acf-65cad3370a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\License">
+      <UniqueIdentifier>{319f9600-9f1e-459d-9879-af8713971550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VMProtect">
+      <UniqueIdentifier>{b09e0a0b-96c2-4daa-888a-70f0c6e6695f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="zDataServer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zDataServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Source Files\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountCharDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="CastleDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="CharDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="CharPreviewDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="GensDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="GSDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemExtDbSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterLevelSystemDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionDbSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="PetDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestMonKillDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="WarehouseDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDAO.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ZenEvenDb.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="CQuery.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DBConBase.h">
+      <Filter>Source Files\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.h">
+      <Filter>Source Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="WZQueue.h">
+      <Filter>Source Files\Server\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="DelayHandler.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="MapServerManager_DS.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerPrc.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="wsJoinServer.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="giocp.h">
+      <Filter>Source Files\Server\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemDef.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ProDef.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="public.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadScript.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprodef.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="winutil.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="WzItemSerial.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="WzMemScript.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="zzzitem.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="BadSyntaxChk.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="MuNameCheck.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="WZIPCheck.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="MyWinsockBase.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="classdef.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="SetItemOption.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptEncode.h">
+      <Filter>Source Files\License</Filter>
+    </ClInclude>
+    <ClInclude Include="VMProtectSDK.h">
+      <Filter>VMProtect</Filter>
+    </ClInclude>
+    <ClInclude Include="PeriodItemExDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="PeriodItemDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="GameShopDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestExpDBSet.h">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zDataServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountCharDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="CharDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="CharPreviewDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="GensDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="GSDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemExtDbSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterLevelSystemDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionDbSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="PetDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestMonKillDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="WarehouseDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDAO.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ZenEvenDb.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="CQuery.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DBConBase.cpp">
+      <Filter>Source Files\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol.cpp">
+      <Filter>Source Files\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="WZQueue.cpp">
+      <Filter>Source Files\Server\Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="DelayHandler.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="MapServerManager_DS.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerPrc.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="wsJoinServer.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="giocp.cpp">
+      <Filter>Source Files\Server\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="winutil.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="WzItemSerial.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="WzMemScript.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="zzzitem.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="BadSyntaxChk.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="MuNameCheck.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="WZIPCheck.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="MyWinsockBase.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="classdef.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="SetItemOption.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptEncode.cpp">
+      <Filter>Source Files\License</Filter>
+    </ClCompile>
+    <ClCompile Include="PeriodItemExDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="PeriodItemDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="GameShopDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestExpDBSet.cpp">
+      <Filter>Source Files\DataBase\DBSet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="zDataServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="VMProtectSDK32.lib">
+      <Filter>VMProtect</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

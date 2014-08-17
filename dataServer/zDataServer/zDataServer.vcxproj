@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F04BD9DF-BA64-429F-8ECD-BC4F8E37B6E4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>zDataServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="small.ico" />
+    <None Include="zDataServer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccountCharDBSet.h" />
+    <ClInclude Include="BadSyntaxChk.h" />
+    <ClInclude Include="BaseDAO.h" />
+    <ClInclude Include="CastleDBSet.h" />
+    <ClInclude Include="CharDBSet.h" />
+    <ClInclude Include="CharPreviewDBSet.h" />
+    <ClInclude Include="classdef.h" />
+    <ClInclude Include="CQuery.h" />
+    <ClInclude Include="CrywolfDBSet.h" />
+    <ClInclude Include="DBConBase.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="DelayHandler.h" />
+    <ClInclude Include="GameShopDBSet.h" />
+    <ClInclude Include="GensDBSet.h" />
+    <ClInclude Include="giocp.h" />
+    <ClInclude Include="GSDBSet.h" />
+    <ClInclude Include="ItemDef.h" />
+    <ClInclude Include="ItemExtDbSet.h" />
+    <ClInclude Include="MapServerManager_DS.h" />
+    <ClInclude Include="MasterLevelSystemDBSet.h" />
+    <ClInclude Include="MuNameCheck.h" />
+    <ClInclude Include="MyWinsockBase.h" />
+    <ClInclude Include="OptionDbSet.h" />
+    <ClInclude Include="PeriodItemDBSet.h" />
+    <ClInclude Include="PeriodItemExDBSet.h" />
+    <ClInclude Include="PetDBSet.h" />
+    <ClInclude Include="ProDef.h" />
+    <ClInclude Include="protocol.h" />
+    <ClInclude Include="public.h" />
+    <ClInclude Include="QuestExpDBSet.h" />
+    <ClInclude Include="QuestMonKillDBSet.h" />
+    <ClInclude Include="ReadScript.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ServerPrc.h" />
+    <ClInclude Include="SetItemOption.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="Sprodef.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VMProtectSDK.h" />
+    <ClInclude Include="WarehouseDBSet.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="winutil.h" />
+    <ClInclude Include="wsJoinServer.h" />
+    <ClInclude Include="WZIPCheck.h" />
+    <ClInclude Include="WzItemSerial.h" />
+    <ClInclude Include="WzMemScript.h" />
+    <ClInclude Include="WZQueue.h" />
+    <ClInclude Include="ScriptEncode.h" />
+    <ClInclude Include="zDataServer.h" />
+    <ClInclude Include="ZenEvenDb.h" />
+    <ClInclude Include="zzzitem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccountCharDBSet.cpp" />
+    <ClCompile Include="BadSyntaxChk.cpp" />
+    <ClCompile Include="BaseDAO.cpp" />
+    <ClCompile Include="CastleDBSet.cpp" />
+    <ClCompile Include="CharDBSet.cpp" />
+    <ClCompile Include="CharPreviewDBSet.cpp" />
+    <ClCompile Include="classdef.cpp" />
+    <ClCompile Include="CQuery.cpp" />
+    <ClCompile Include="CrywolfDBSet.cpp" />
+    <ClCompile Include="DBConBase.cpp" />
+    <ClCompile Include="DelayHandler.cpp" />
+    <ClCompile Include="GameShopDBSet.cpp" />
+    <ClCompile Include="GensDBSet.cpp" />
+    <ClCompile Include="giocp.cpp" />
+    <ClCompile Include="GSDBSet.cpp" />
+    <ClCompile Include="ItemExtDbSet.cpp" />
+    <ClCompile Include="MapServerManager_DS.cpp" />
+    <ClCompile Include="MasterLevelSystemDBSet.cpp" />
+    <ClCompile Include="MuNameCheck.cpp" />
+    <ClCompile Include="MyWinsockBase.cpp" />
+    <ClCompile Include="OptionDbSet.cpp" />
+    <ClCompile Include="PeriodItemDBSet.cpp" />
+    <ClCompile Include="PeriodItemExDBSet.cpp" />
+    <ClCompile Include="PetDBSet.cpp" />
+    <ClCompile Include="protocol.cpp" />
+    <ClCompile Include="QuestExpDBSet.cpp" />
+    <ClCompile Include="QuestMonKillDBSet.cpp" />
+    <ClCompile Include="ServerPrc.cpp" />
+    <ClCompile Include="SetItemOption.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WarehouseDBSet.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="winutil.cpp" />
+    <ClCompile Include="wsJoinServer.cpp" />
+    <ClCompile Include="WZIPCheck.cpp" />
+    <ClCompile Include="WzItemSerial.cpp" />
+    <ClCompile Include="WzMemScript.cpp" />
+    <ClCompile Include="WZQueue.cpp" />
+    <ClCompile Include="ScriptEncode.cpp" />
+    <ClCompile Include="zDataServer.cpp" />
+    <ClCompile Include="ZenEvenDb.cpp" />
+    <ClCompile Include="zzzitem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="zDataServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="VMProtectSDK32.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
