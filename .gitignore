@@ -1,0 +1,8 @@
+# User-specific files
+dataServer/*.suo
+dataServer/*.user
+
+# SQL Server files
+dataServer/*.mdf
+dataServer/*.sdf
+dataServer/*.ldf
