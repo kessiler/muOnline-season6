@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA2A194B-AF0C-4212-9146-B0FCA11DE6E2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>zClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>zClient</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ZCLIENT_S6E3_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;ZCLIENT_S6E3_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChatExpanded.h" />
+    <ClInclude Include="CheatGuard.h" />
+    <ClInclude Include="ConnectEx.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="CraftSystem.h" />
+    <ClInclude Include="Defines.h" />
+    <ClInclude Include="Import.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemAsm.h" />
+    <ClInclude Include="ItemModel.h" />
+    <ClInclude Include="ItemPrice.h" />
+    <ClInclude Include="ItemRank.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="NewsBoard.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="OffTrade.h" />
+    <ClInclude Include="Other.h" />
+    <ClInclude Include="Pet.h" />
+    <ClInclude Include="Protocol.h" />
+    <ClInclude Include="ProtocolDefine.h" />
+    <ClInclude Include="ReadScript.h" />
+    <ClInclude Include="ResetSystem.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScriptEncode.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TDebugLog.h" />
+    <ClInclude Include="TMemory.h" />
+    <ClInclude Include="TrayMode.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="VisualFix.h" />
+    <ClInclude Include="VMProtectSDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ChatExpanded.cpp" />
+    <ClCompile Include="CheatGuard.cpp" />
+    <ClCompile Include="ConnectEx.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="CraftSystem.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemAsm.cpp" />
+    <ClCompile Include="ItemModel.cpp" />
+    <ClCompile Include="ItemPrice.cpp" />
+    <ClCompile Include="ItemRank.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="NewsBoard.cpp" />
+    <ClCompile Include="OffTrade.cpp" />
+    <ClCompile Include="Other.cpp" />
+    <ClCompile Include="Pet.cpp" />
+    <ClCompile Include="Protocol.cpp" />
+    <ClCompile Include="ResetSystem.cpp" />
+    <ClCompile Include="ScriptEncode.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TDebugLog.cpp" />
+    <ClCompile Include="TMemory.cpp" />
+    <ClCompile Include="TrayMode.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="VisualFix.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="VMProtectSDK32.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

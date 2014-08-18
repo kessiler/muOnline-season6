@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Other">
+      <UniqueIdentifier>{f7490ef9-c4cd-4ce6-bdfb-ac86f905bb2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{974b0b4b-0073-41cd-a270-a227320c6e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interface">
+      <UniqueIdentifier>{9fb936bc-a3a4-4f82-86cc-b36270cf4725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol">
+      <UniqueIdentifier>{c832922e-25ca-4bb7-87a8-d6beb4aeef23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CheatGuard">
+      <UniqueIdentifier>{6c87a517-12a8-4c34-9be0-88c96be2cd62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object">
+      <UniqueIdentifier>{c5865a58-a51c-410c-bf27-71294036329f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\User">
+      <UniqueIdentifier>{89854052-e332-49ff-b2fe-3f788b11734b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\Item">
+      <UniqueIdentifier>{9718e62f-f4bc-41a7-a39e-6633651147c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\Controller">
+      <UniqueIdentifier>{e6b50a2c-2d1b-472d-ac63-6e5da0125245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\Camera">
+      <UniqueIdentifier>{9f190db6-3249-4598-88bb-b51c30e2f0a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CraftSystem">
+      <UniqueIdentifier>{89997f91-9493-4dc7-a929-5c77f622c1cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ResetSystem">
+      <UniqueIdentifier>{3c7308b9-94ea-440c-996a-3d8e68eccd77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\Monster">
+      <UniqueIdentifier>{9c7d85de-84ce-4f4c-b681-b2d8f26366b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern">
+      <UniqueIdentifier>{426b5741-7b5a-49c0-8334-205fab715768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\VMProtect">
+      <UniqueIdentifier>{f7db903d-dc33-481a-ae0a-2356669ec822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interface\ChatExpanded">
+      <UniqueIdentifier>{a86a428c-6879-4c83-80fb-09fd08cb1704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NewsBoard">
+      <UniqueIdentifier>{045d6e81-30e9-4abe-ac6e-a379c04dff4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ItemPrice">
+      <UniqueIdentifier>{505568c7-723a-43bc-951b-e02d25ed9a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ConnectEx">
+      <UniqueIdentifier>{9fb31a8e-caec-4570-9830-fbf57cf0de25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\TrayMode">
+      <UniqueIdentifier>{d73efbb3-eed0-43f4-b771-6e706db07778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object\Item\Pet">
+      <UniqueIdentifier>{d10767c7-344f-4f24-8194-8eb00bcaced2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VisualFix">
+      <UniqueIdentifier>{6c95e12f-6d1b-4384-a02f-e93e7b281808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OffTrade">
+      <UniqueIdentifier>{59046bfb-72fe-4f72-9c2c-b373cd87ddf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ItemRank">
+      <UniqueIdentifier>{22f01b7e-93bf-448d-94d0-aad1847e31ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ItemModel">
+      <UniqueIdentifier>{4bb4bb12-c6f3-4fdc-9ada-1e102e963928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SocketItem">
+      <UniqueIdentifier>{baa0bc1a-a245-4b43-832f-7427ac871902}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Other.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebugLog.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="TMemory.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Source Files\Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Source Files\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Import.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Source Files\Object\User</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolDefine.h">
+      <Filter>Source Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatGuard.h">
+      <Filter>Source Files\CheatGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Source Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Source Files\Object\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Source Files\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Source Files\Other\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source Files\Other\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CraftSystem.h">
+      <Filter>Source Files\CraftSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadScript.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetSystem.h">
+      <Filter>Source Files\ResetSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemPrice.h">
+      <Filter>Source Files\ItemPrice</Filter>
+    </ClInclude>
+    <ClInclude Include="VMProtectSDK.h">
+      <Filter>Extern\VMProtect</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatExpanded.h">
+      <Filter>Source Files\Interface\ChatExpanded</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptEncode.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="NewsBoard.h">
+      <Filter>Source Files\NewsBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemAsm.h">
+      <Filter>Source Files\Object\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectEx.h">
+      <Filter>Source Files\ConnectEx</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayMode.h">
+      <Filter>Source Files\Other\TrayMode</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet.h">
+      <Filter>Source Files\Object\Item\Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualFix.h">
+      <Filter>Source Files\VisualFix</Filter>
+    </ClInclude>
+    <ClInclude Include="OffTrade.h">
+      <Filter>Source Files\OffTrade</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemRank.h">
+      <Filter>Source Files\ItemRank</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemModel.h">
+      <Filter>Source Files\ItemModel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Other.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebugLog.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="TMemory.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\Object\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatGuard.cpp">
+      <Filter>Source Files\CheatGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol.cpp">
+      <Filter>Source Files\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Source Files\Object\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Other\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Other\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CraftSystem.cpp">
+      <Filter>Source Files\CraftSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetSystem.cpp">
+      <Filter>Source Files\ResetSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemPrice.cpp">
+      <Filter>Source Files\ItemPrice</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatExpanded.cpp">
+      <Filter>Source Files\Interface\ChatExpanded</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptEncode.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NewsBoard.cpp">
+      <Filter>Source Files\NewsBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemAsm.cpp">
+      <Filter>Source Files\Object\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectEx.cpp">
+      <Filter>Source Files\ConnectEx</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayMode.cpp">
+      <Filter>Source Files\Other\TrayMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet.cpp">
+      <Filter>Source Files\Object\Item\Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualFix.cpp">
+      <Filter>Source Files\VisualFix</Filter>
+    </ClCompile>
+    <ClCompile Include="OffTrade.cpp">
+      <Filter>Source Files\OffTrade</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemRank.cpp">
+      <Filter>Source Files\ItemRank</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemModel.cpp">
+      <Filter>Source Files\ItemModel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="VMProtectSDK32.lib">
+      <Filter>Extern\VMProtect</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
