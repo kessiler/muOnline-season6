@@ -1,8 +1,26 @@
 # User-specific files
 dataServer/*.suo
 dataServer/*.user
+client/*.suo
+client/*.user
 
 # SQL Server files
 dataServer/*.mdf
 dataServer/*.sdf
 dataServer/*.ldf
+client/*.mdf
+client/*.sdf
+client/*.ldf
+
+# Temporary files
+dataserver/ipch
+dataserver/Release
+dataserver/zDataServer/Release
+dataserver/Debug
+dataserver/zDataServer/Debug
+
+client/ipch
+client/Release
+client/zClient/Release
+client/Debug
+client/zClient/Debug
