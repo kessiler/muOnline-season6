@@ -101,7 +101,7 @@
     <TargetName>GameServer</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\Debug\</OutDir>
+    <OutDir>..\..\..\..\muServer\zGameServer\</OutDir>
     <IntDir>.\Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>GameServer</TargetName>
@@ -292,7 +292,7 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\GameServer___Win32_JPN\GameServer.bsc</OutputFile>
+      <OutputFile>.\Debug\GameServer.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -383,7 +383,7 @@
     </ClCompile>
     <Link>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <OutputFile>..\Debug\GameServer.exe</OutputFile>
+      <OutputFile>..\..\..\..\muServer\zGameServer\GameServer.exe</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
