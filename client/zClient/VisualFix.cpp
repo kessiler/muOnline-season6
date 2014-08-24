@@ -264,8 +264,8 @@ void cVisualFix::DrawCircle(DWORD ModelID, float Arg2, float Arg3, float Arg4, f
     {
         float StartY        = LifeFill * Height + PosY;
         float StartHeight   = Height - LifeFill * Height;
-        float SourceY       = LifeFill * Height / 64.0;
-        float SouceHeight   = (1.0 - LifeFill) * Height / 64.0;
+        float SourceY       = LifeFill * Height / 64.0f;
+        float SouceHeight   = (1.0f - LifeFill) * Height / 64.0f;
         return pDrawCircle(ModelID, Arg2, StartY, Arg4, StartHeight, 0, SourceY, Arg8, SouceHeight, 1, 1, 0);
     }
     // ----
@@ -273,8 +273,8 @@ void cVisualFix::DrawCircle(DWORD ModelID, float Arg2, float Arg3, float Arg4, f
     {
         float StartY        = ManaFill * Height + PosY;
         float StartHeight   = Height - ManaFill * Height;
-        float SourceY       = ManaFill * Height / 64.0;
-        float SouceHeight   = (1.0 - ManaFill) * Height / 64.0;
+        float SourceY       = ManaFill * Height / 64.0f;
+        float SouceHeight   = (1.0f - ManaFill) * Height / 64.0f;
         return pDrawCircle(ModelID, Arg2, StartY, Arg4, StartHeight, 0, SourceY, Arg8, SouceHeight, 1, 1, 0);
     }
     // ----
@@ -282,8 +282,8 @@ void cVisualFix::DrawCircle(DWORD ModelID, float Arg2, float Arg3, float Arg4, f
 	{
         float StartY        = AgFill * Height + PosY;
         float StartHeight   = Height - AgFill * Height;
-        float SourceY       = AgFill * Height / 64.0;
-        float SouceHeight   = (1.0 - AgFill) * Height / 64.0;
+        float SourceY       = AgFill * Height / 64.0f;
+        float SouceHeight   = (1.0f - AgFill) * Height / 64.0f;
         return pDrawCircle(ModelID, Arg2, StartY, Arg4, StartHeight, 0, SourceY, Arg8, SouceHeight, 1, 1, 0);
 	}
 	// ----
@@ -291,8 +291,8 @@ void cVisualFix::DrawCircle(DWORD ModelID, float Arg2, float Arg3, float Arg4, f
 	{
         float StartY        = SdFill * Height + PosY;
         float StartHeight   = Height - SdFill * Height;
-        float SourceY       = SdFill * Height / 64.0;
-        float SouceHeight   = (1.0 - SdFill) * Height / 64.0;
+        float SourceY       = SdFill * Height / 64.0f;
+        float SouceHeight   = (1.0f - SdFill) * Height / 64.0f;
         return pDrawCircle(ModelID, Arg2, StartY, Arg4, StartHeight, 0, SourceY, Arg8, SouceHeight, 1, 1, 0);
 	}
 	// ----

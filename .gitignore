@@ -11,12 +11,15 @@ gameServer/gameServer/*.user
 dataServer/*.mdf
 dataServer/*.sdf
 dataServer/*.ldf
+dataServer/*.opensdf
 client/*.mdf
 client/*.sdf
 client/*.ldf
+client/*.opensdf
 gameServer/*.mdf
 gameServer/*.sdf
 gameServer/*.ldf
+gameServer/*.opensdf
 
 # Temporary files
 dataserver/ipch

@@ -65,28 +65,6 @@ BYTE gap01[172];
 #pragma pack(pop)
 // ----------------------------------------------------------------------------------------------
 
-typedef class
-{
-public:
-/*+16*/		int		Color1;
-/*+40*/		int		Color2;
-/*+64*/		int		Color3;
-/*+88*/		int		Color6;
-/*+112*/	int		Color7;
-/*+136*/	int		Color8;
-/*+160*/	int		Color4;
-/*+184*/	int		Color5;
-/*+208*/	int		Color9;
-/*+232*/	int		Color10;
-
-/*+268*/	char *	Unknwon268;	//
-/*+316*/	DWORD	Unknown316;
-/*+320*/	DWORD	Unknown320;
-/*+328*/	DWORD	Unknown328;
-/*+336*/	float	Unknown336;
-};
-// ----------------------------------------------------------------------------------------------
-
 #pragma pack(push, 1)
 struct PartyList //-> Complete (size: 32)
 {

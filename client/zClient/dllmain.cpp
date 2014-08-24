@@ -25,7 +25,9 @@
 
 extern "C" __declspec(dllexport)void Init()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	// ----
 #ifdef __MUANGEL__
 	if( pMUIsLoaded == 1 )
@@ -51,7 +53,7 @@ extern "C" __declspec(dllexport)void Init()
 #endif
 #endif
 	// ----
-#ifdef PROTECT
+#ifdef VM_PROTECT
 	if( VMProtectIsDebuggerPresent(TRUE) != 0 )
 	{
 		MessageBox(0, "Protect system found debugger, process will be closed", "zCheatGuard", ERROR);
@@ -87,7 +89,9 @@ extern "C" __declspec(dllexport)void Init()
 	LoadLibrary("ttlci.dll");
 	// ----
 //	gSocketItem.Load();
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // ----------------------------------------------------------------------------------------------
 

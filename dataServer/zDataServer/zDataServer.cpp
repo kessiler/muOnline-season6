@@ -70,7 +70,7 @@ void Init()
 
 	if(OpenItemScript(szKorItemTextFileName) == FALSE)
 	{
-		//MsgBox("Item FIle Not Found. (파일이 존재하지 않습니다.) %s", szKorItemTextFileName);
+		//MsgBox("Item FIle Not Found. (파일이 존재하지 않습니다.) %s", szKorItemTextFileName); adfssa
 	}
 
 	if(gLanguage == 0)

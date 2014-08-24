@@ -81,7 +81,9 @@ void Other::Crack()
 
 void Other::Changer()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	// ----
 #ifdef __ROOT__
 	SetByte((PVOID)0x0095CE90, 0xEB);
@@ -130,7 +132,9 @@ void Other::Changer()
 	SetDword((PVOID)(0x004D1D0B+1), (DWORD)DumpName);
 	SetDword((PVOID)(0x004D9F54+1), (DWORD)ScreenName);
 	// ----
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // ----------------------------------------------------------------------------------------------
 

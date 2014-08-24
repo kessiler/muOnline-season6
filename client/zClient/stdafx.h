@@ -1,10 +1,10 @@
 #pragma once
 // ----------------------------------------------------------------------------------------------
 
-#define PROTECT
+//#define VM_PROTECT
 // ----------------------------------------------------------------------------------------------
 
-//#define __ROOT__		1
+#define __ROOT__		1
 //#define __BEREZNUK__	2
 //#define __MIX__		4
 //#define __WHITE__		6
@@ -13,7 +13,7 @@
 //#define __REEDLAN__	9
 //#define __MUANGEL__	10
 //#define __MEGAMU__	14
-#define __ALIEN__		16
+//#define __ALIEN__		16
 //#define __VIRNET__		19
 // ----------------------------------------------------------------------------------------------
 
@@ -34,16 +34,13 @@
 #include <stdarg.h>
 #include <process.h>
 // ----------------------------------------------------------------------------------------------
-
-#include "VMProtectSDK.h"
+#ifdef VM_PROTECT
+	#include "VMProtectSDK.h"
+#endif
 #include "Defines.h"
 #include "resource.h"
 // ----------------------------------------------------------------------------------------------
 
-#ifdef PROTECT
-#pragma comment(lib, "VMProtectSDK32.lib")
-#endif
-// ----------------------------------------------------------------------------------------------
 
 #define MAX_SUBTYPE_ITEMS 512
 #define ITEMGET(x,y) ( (x)*MAX_SUBTYPE_ITEMS + (y))
