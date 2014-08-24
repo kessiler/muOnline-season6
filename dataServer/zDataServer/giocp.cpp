@@ -125,7 +125,7 @@ DWORD WINAPI IocpServerWorker(LPVOID p)
 	GetSystemInfo(&SystemInfo);
 	g_dwThreadCount = SystemInfo.dwNumberOfProcessors * 2;
 
-	if(g_dwThreadCount > gSettings.MaxThreadCount) //webzen season 6.2 fix
+	if( g_dwThreadCount > gSettings.MaxThreadCount) //webzen season 6.2 fix
 	{
 		g_dwThreadCount = gSettings.MaxThreadCount;
 		gWindow.PrintLog(" **** Worker Thread Max Count Fix 16ea ****");
