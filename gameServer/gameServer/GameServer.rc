@@ -1,0 +1,346 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "All User Close",              IDM_ALL_USER_CLOSE
+        MENUITEM "All User LogOut",             IDM_ALL_USER_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Reload"
+    BEGIN
+        MENUITEM "&Monster Position Reload",    IDM_MONSTER_POSITION_RELOAD
+        MENUITEM "&Shop Reload",                IDM_SHOP_RELOAD
+        MENUITEM "CashShop Option Reload",      IDM_CASHSHOP_OPTION_RELOAD
+        MENUITEM "MapServer Info Reload",       IDM_MAP_SERVER_INFO_RELOAD
+        MENUITEM "CastleSiege Reload",          IDM_CASTLE_SIEGE_RELOAD
+        MENUITEM "Custom Data Reload",          ID_RELOAD_CUSTOMFOLDER
+        MENUITEM "Gens Data Reload",            ID_RELOAD_GENSDATARELOAD
+    END
+    POPUP "&Event Load"
+    BEGIN
+        MENUITEM "Reload All Event",            IDM_RELOAD_ALL_EVENT
+        MENUITEM SEPARATOR
+        MENUITEM "Reload DevilSquare",          IDM_RELOAD_DEVILSQUARE
+        MENUITEM "Reload BloodCastle",          IDM_RELOAD_BLOODCASTLE
+        MENUITEM "Reload ChaosCastle",          IDM_RELOAD_CHAOSCASTLE
+        MENUITEM SEPARATOR
+        MENUITEM "Reload UnderWorld Attack",    IDM_RELOAD_UNDERWORLD_ATTACK
+        MENUITEM "Reload GoldenTroop Attack",   IDM_RELOAD_GOLDENTROOP_ATTACK
+        MENUITEM "Reload WhiteMage Attack",     IDM_RELOAD_WHITEMAGE_ATTACK
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Love PangPang",        IDM_RELOAD_LOVE_PANGPANG
+        MENUITEM "Reload FireCracker",          IDM_RELOAD_FIRECRACKER
+        MENUITEM "Reload X-Mas Star",           IDM_RELOAD_XMAS_STAR
+        MENUITEM "Reload Heart of Love",        IDM_RELOAD_HEART_OF_LOVE
+        MENUITEM "Reload Christmas RibbonBox",  IDM_RELOAD_CHRISTMAS_RIBBONBOX
+        MENUITEM "Reload Valentine's Day Chocolate Box", IDM_RELOAD_VALENTINE_DAY_CHOCOLATE_BOX
+        MENUITEM "Reload White Day Candy Box",  IDM_RELOAD_WHITE_DAY_CANDY_BOX
+        MENUITEM SEPARATOR
+        MENUITEM "Reload NPC say HappyNewYear", IDM_RELOAD_NPC_SAY_HAPPY_NEW_YEAR
+        MENUITEM "Reload NPC say Merry X-Mas",  IDM_RELOAD_NPC_SAY_MERRY_XMAS
+    END
+    POPUP "Game ETC Load"
+    BEGIN
+        MENUITEM "Reload All ETC Option",       IDM_RELOAD_ALL_ETC_OPTION
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Create Character",     IDM_RELOAD_CREATE_CHARACTER
+        MENUITEM "Reload Guild",                IDM_RELOAD_GUILD
+        MENUITEM "Reload Trade",                IDM_RELOAD_TRADE
+        MENUITEM "Reload Chaos Box",            IDM_RELOAD_CHAOSBOX
+        MENUITEM "Reload Personal Shop",        IDM_RELOAD_PERSONAL_SHOP
+        MENUITEM "Reload PK Item Drop",         IDM_RELOAD_PK_ITEM_DROP
+        MENUITEM "Reload Item Drop Rate",       IDM_RELOAD_ITEM_DROP_RATE
+        MENUITEM "Reload SpeedHack",            IDM_RELOAD_SPEEDHACK
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Log Paint",                   IDM_LOG_PAINT
+        MENUITEM "Log CastleSiege",             IDM_LOG_CASTLESIEGE
+        MENUITEM SEPARATOR
+        MENUITEM "Map1",                        IDM_MAP1
+        MENUITEM "Map2",                        IDM_MAP2
+        MENUITEM "Map3",                        IDM_MAP3
+        MENUITEM "Map4",                        IDM_MAP4
+        MENUITEM "Crywolf",                     IDM_CRYWOLF
+    END
+    POPUP "AutoClose"
+    BEGIN
+        MENUITEM "1 Minute",                    IDM_1_MINUTE_CLOSE
+        MENUITEM "3 Minute",                    IDM_3_MINUTE_CLOSE
+        MENUITEM "5 Minute",                    IDM_5_MINUTE_CLOSE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Reload"
+    BEGIN
+        MENUITEM "Data",                        ID_RELOAD_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "Custom",                      ID_RELOAD_CUSTOM
+        MENUITEM "Event",                       ID_RELOAD_EVENT
+        MENUITEM "GameShop",                    ID_RELOAD_GAMESHOP
+        MENUITEM "ItemBag",                     ID_RELOAD_ITEM
+        MENUITEM "Monster",                     ID_RELOAD_MONSTER
+        MENUITEM "Shop",                        ID_RELOAD_SHOP
+        MENUITEM "Skill",                       ID_RELOAD_SKILL
+    END
+    POPUP "Connection"
+    BEGIN
+        MENUITEM "Close All",                   ID_PLAYERS_CLOSEALL
+        MENUITEM "Logout All",                  ID_CONNECTION_LOGOUTALL
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Close (1 Min)",          ID_CONNECTION_AUTOCLOSE1
+        MENUITEM "Auto Close (3 Min)",          ID_CONNECTION_AUTOCLOSE2
+        MENUITEM "Auto Close (5 Min)",          ID_CONNECTION_AUTOCLOSE3
+    END
+    POPUP "User Slot"
+    BEGIN
+        MENUITEM "Increase by 10",              ID_SLOT_INCREASEBY10
+        MENUITEM "Increase by 50",              ID_SLOT_INCREASEBY50
+        MENUITEM "Increase by 100",             ID_SLOT_INCREASEBY100
+        MENUITEM SEPARATOR
+        MENUITEM "Decrease by 10",              ID_SLOT_DECREASEBY10
+        MENUITEM "Decrease by 50",              ID_SLOT_DECREASEBY50
+        MENUITEM "Decrease by 100",             ID_SLOT_DECREASEBY100
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About...",                    ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDA_GAMESERVER ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NORMAL_V1           ICON                    "ICON.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT_BOX DIALOGEX 22, 17, 171, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "zGameServer :: About"
+FONT 8, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "zGameServer",-1,59,12,48,8,SS_NOPREFIX
+    LTEXT           "Copyright (c) 2013 zTeam",-1,41,22,119,8
+    DEFPUSHBUTTON   "Close",1,6,34,160,18,WS_GROUP
+END
+
+IDD_GUILD_LIST_STATE DIALOG 0, 0, 195, 27
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Guild list state."
+FONT 8, "System"
+BEGIN
+    CONTROL         "Progress1",IDP_PROGRESS_BAR,"msctls_progress32",0x0,7,5,181,10
+    RTEXT           "",IDS_CURRENT_GUILD_NAME,7,16,181,11
+END
+
+IDD_CASTLE_SIEGE_LOG DIALOG 0, 0, 313, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Castle Siege Log Dialog"
+FONT 10, "MS Serif"
+BEGIN
+    LISTBOX         IDE_EDIT_LOG,7,7,299,214,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+151 DIALOG 0, 0, 187, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,130,7,50,14
+    PUSHBUTTON      "Cancel",2,130,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUT_BOX, DIALOG
+    BEGIN
+    END
+
+    IDD_GUILD_LIST_STATE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 26
+        HORZGUIDE, 11
+        HORZGUIDE, 19
+    END
+
+    151, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+IDV_GAMESERVER VERSIONINFO
+ FILEVERSION 1,0,0,99
+ PRODUCTVERSION 1,0,0,99
+ FILEFLAGSMASK 0x0L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "CompanyName", "zTeam"
+            VALUE "FileDescription", "zGameServer"
+            VALUE "FileVersion", "1.0.0.99"
+            VALUE "InternalName", "zGameServer"
+            VALUE "LegalCopyright", "Copyright © 2013"
+            VALUE "OriginalFilename", "GameServer.exe"
+            VALUE "ProductName", "zGameServer"
+            VALUE "ProductVersion", "1.0.0.99"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "GameServer"
+    IDS_HELLO               "Hello World!"
+    IDS_GAMESERVER          "GAMESERVER"
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

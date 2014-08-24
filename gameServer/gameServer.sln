@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameServer", "GameServer\GameServer.vcxproj", "{C11ED654-6F5D-E8DC-8833-B18E3187B87D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C11ED654-6F5D-E8DC-8833-B18E3187B87D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C11ED654-6F5D-E8DC-8833-B18E3187B87D}.Debug|Win32.Build.0 = Debug|Win32
+		{C11ED654-6F5D-E8DC-8833-B18E3187B87D}.Release|Win32.ActiveCfg = Release|Win32
+		{C11ED654-6F5D-E8DC-8833-B18E3187B87D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_UpdateAssemblyVersion = True
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_StartDate = 2013/2/22
+		BuildVersion_BuildVersioningStyle = None.None.None.Increment
+	EndGlobalSection
+EndGlobal

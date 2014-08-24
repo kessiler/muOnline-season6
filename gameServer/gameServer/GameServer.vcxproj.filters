@@ -1,0 +1,1917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4e63fb2c-3965-4d10-aa1b-f74ffd9b490a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9c962d30-49d1-4279-b004-e4b2ed1bc81a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1bf8d366-0f9e-4139-83d5-a5f4d095f98f}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Custom">
+      <UniqueIdentifier>{477ed5a1-59ea-407b-8d42-b865790ef791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InDev">
+      <UniqueIdentifier>{ad1fdcdd-695e-4b5f-8cd4-dd52f180475a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern">
+      <UniqueIdentifier>{6cc936a1-1435-4b14-999a-6c16f94686a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\MuMsg">
+      <UniqueIdentifier>{f07d6676-62db-47ec-847f-c6a8dd9663a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\VMProtect">
+      <UniqueIdentifier>{eea1dfc5-3d31-4b17-ac53-5975a16651de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\WzAG">
+      <UniqueIdentifier>{7ab08a8c-eba8-483e-b7d5-df4c7d7b8aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\Libs">
+      <UniqueIdentifier>{a636cdb6-6b89-48dd-af7c-1bae2c19d085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event">
+      <UniqueIdentifier>{321e5947-d761-4c73-ae35-f5b0f387599b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\BloodCastle">
+      <UniqueIdentifier>{2e9d739d-0544-41a2-a06b-478a6f9591a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\AttackEvent">
+      <UniqueIdentifier>{20f72db9-4d36-4191-bb10-cd2a659b2b95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\BattleSoccer">
+      <UniqueIdentifier>{0b5e7f56-1534-44ed-b99f-3f1b1c207b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\ChaosCastle">
+      <UniqueIdentifier>{be59e2a5-c5f1-4374-928f-8532d232dc98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Crywolf">
+      <UniqueIdentifier>{8f7306e6-ede5-40de-8610-ad25357bc6bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Kanturu">
+      <UniqueIdentifier>{123e660a-ef04-443a-ac5c-d45d5eb8868b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\X-Mas">
+      <UniqueIdentifier>{c34b4fbc-7ee2-493d-b485-f5fd16c24c2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Raklion">
+      <UniqueIdentifier>{d5c6cefb-a168-4e2e-8d35-e9afb742c5f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\RingAttack">
+      <UniqueIdentifier>{a8b9b939-7d8f-46d1-94eb-67fa76959dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\DragonAttack">
+      <UniqueIdentifier>{fc63326e-5edc-4a53-8a50-30eefe7fea1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\DevilSquare">
+      <UniqueIdentifier>{8be37a5b-12f4-4be0-bdb9-336994576a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Manager">
+      <UniqueIdentifier>{01aba7c7-d60d-4468-ae2c-2f209fde33a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Eledorado">
+      <UniqueIdentifier>{e45a2985-4d79-4eaf-b93e-33aadb0aa7b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\CastleSiege">
+      <UniqueIdentifier>{1faba9fa-63c5-4b06-a106-4f06aa9b362a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\CastleDeep">
+      <UniqueIdentifier>{6a0fd6a5-feba-4f42-992e-b7fb8f8fd730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Kalima">
+      <UniqueIdentifier>{8bab97b4-a758-4114-a7ef-63a4524f5800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol">
+      <UniqueIdentifier>{631c9aae-57b5-4403-b29b-eb84a9c36b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol\DataServer">
+      <UniqueIdentifier>{a7594f2d-fa23-47af-8a4e-62dd68a3e7a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol\EventServer">
+      <UniqueIdentifier>{206c21b5-713f-4938-8e99-41dca2095e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol\ExternServer">
+      <UniqueIdentifier>{50262995-8ed4-4532-ba41-b1076eee71b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol\JoinServer">
+      <UniqueIdentifier>{758270ea-b06b-4ba6-a407-c5b8fa6b8fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol\Client">
+      <UniqueIdentifier>{28ce12ac-8aea-4726-9c15-281f505508de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monster">
+      <UniqueIdentifier>{7eb721d7-83a6-4b0b-8c01-a62f1174ee07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\IllusionTemple">
+      <UniqueIdentifier>{83ac3fd3-5cd7-49ba-9486-ac6fff32fc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item">
+      <UniqueIdentifier>{c8c92ba0-7aad-432f-9b19-8344a93cfd34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\Mix">
+      <UniqueIdentifier>{a5ed195e-e078-4f60-a76b-1b2a0ad59fe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\Harmony &amp; 380">
+      <UniqueIdentifier>{f841b172-43ba-4cb5-a236-5bc46bafc7fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NPC">
+      <UniqueIdentifier>{235185f9-f4de-4085-b423-d0447f1b4a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{f75e9418-0672-42ad-a029-2ac7504b3818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\IOCP">
+      <UniqueIdentifier>{47be7303-aa5f-44eb-beec-e321ea460ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Gamble">
+      <UniqueIdentifier>{c1ac7680-5155-4ead-aa87-182d7119de28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\Bags">
+      <UniqueIdentifier>{b8b27c8d-f813-4640-bb89-3f4ac544b92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monster\RegenSystem">
+      <UniqueIdentifier>{69f51496-34af-4340-a7e7-47630fae8049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monster\StatCalc">
+      <UniqueIdentifier>{2bebbb90-ca14-4976-b551-553ff24e99f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\Main">
+      <UniqueIdentifier>{eed49ad2-43be-4f75-add9-f3fea4033abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\Period">
+      <UniqueIdentifier>{4cd25772-f550-4657-ae71-bddb63cea2c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\ChaosCard">
+      <UniqueIdentifier>{c1962c8b-49da-4341-82e2-8809007c1616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other">
+      <UniqueIdentifier>{a8483ceb-5416-4d6e-8baf-b633965c79e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\Logs">
+      <UniqueIdentifier>{edd35018-5a5d-4677-b900-c365d82e0695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\LargeRand">
+      <UniqueIdentifier>{e6716799-d8f7-45d3-b63f-1357927ad5d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\Dir">
+      <UniqueIdentifier>{ccfd9cd7-3384-4c17-8a3b-642b14527e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\DB">
+      <UniqueIdentifier>{af0b97e6-2974-49d9-b49d-10457931e3a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\WzScript">
+      <UniqueIdentifier>{48ef6725-7c44-4107-b355-4f243ce8d26c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character">
+      <UniqueIdentifier>{6a1fc74a-72b8-4682-9572-a7c491a09e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\MasterSystem">
+      <UniqueIdentifier>{ff8af3d4-a4bf-4f37-992d-0fabdeb35ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\NewPvP">
+      <UniqueIdentifier>{efe12faa-3b65-4e3e-abf6-a57a08e3cc98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\GensSystem">
+      <UniqueIdentifier>{3a8c3abf-172a-445d-9867-6276eb99831a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\Pet">
+      <UniqueIdentifier>{ef5d0f80-a850-4c5c-b72e-b316fbaf5aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\WzUpdate">
+      <UniqueIdentifier>{2a60ee54-3c09-4b95-a20f-356c6bd55fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\IOCP\WzQueue">
+      <UniqueIdentifier>{5c115e97-a175-441d-812e-51eab395ec53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Socket">
+      <UniqueIdentifier>{2a575ced-56ac-41af-b67a-52a1634441c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\MiniDump">
+      <UniqueIdentifier>{42727145-5c59-4457-aaf3-de4926073c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\PCBang [KOR]">
+      <UniqueIdentifier>{832284f7-636b-4269-aed7-ae2d70a011cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\GuildSystem">
+      <UniqueIdentifier>{196c65d8-15b1-4574-b2c2-1e51ab7c6a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\PartySystem">
+      <UniqueIdentifier>{365c7fa3-aeef-42ae-87e5-58ec33682f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\Lua">
+      <UniqueIdentifier>{40f30fd2-73c1-4721-99b1-d8bd0e09f692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\Lua\Console">
+      <UniqueIdentifier>{fb4e9188-580d-4127-87be-957454392660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\Lua\MU">
+      <UniqueIdentifier>{1867f717-cdd5-45e5-a1cf-958e83b6995d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\Lua\MU\LuaExport">
+      <UniqueIdentifier>{21d966c8-99a5-4d48-9265-1b9031a49303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\Lua\MU\Additional">
+      <UniqueIdentifier>{a4addd67-a860-46fe-99a3-ca141242e455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extern\Lua\MU\Additional\Scripts">
+      <UniqueIdentifier>{d9f82c92-9b21-4203-93b1-ca86fbbb8f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\TemporaryManager">
+      <UniqueIdentifier>{88a2dc70-d538-4ddd-bdd6-c379dc98c0f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\ImperialGuardian">
+      <UniqueIdentifier>{513a9745-37ea-41d7-a25a-0ee1c433c82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\MinusStat">
+      <UniqueIdentifier>{3f0eb6ab-e337-418e-8d6e-a56994c59019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InDev\GameShop">
+      <UniqueIdentifier>{40c09e9c-c82f-4226-9559-46011a76c920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\MUHelper">
+      <UniqueIdentifier>{68f19bce-f781-453c-b776-010485117e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monster\AI">
+      <UniqueIdentifier>{815abb5a-c590-4ef0-9df7-ad43b47c30ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monster\Skill">
+      <UniqueIdentifier>{baa221b2-bd52-444e-a881-06bb953b5135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monster\SetBase">
+      <UniqueIdentifier>{34bf8468-01bf-4061-86ef-324de92e2640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NPC\Shop">
+      <UniqueIdentifier>{4b192b07-49ea-49eb-9029-245ff0805b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NPC\Talk">
+      <UniqueIdentifier>{4194400c-683b-4e68-8128-241a579cabba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\SocketSystem">
+      <UniqueIdentifier>{90869670-d0af-4ce8-96f0-be703d135ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\LuckyItem">
+      <UniqueIdentifier>{bfef8374-1dac-4a6c-9e78-4d4f29e2ac03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CashShop">
+      <UniqueIdentifier>{4c299610-2d19-4188-b1a6-595926cab015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CashShop\Old">
+      <UniqueIdentifier>{bbbabe20-123b-49f9-84a1-b78031aab59e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\Commands">
+      <UniqueIdentifier>{ce74f77d-af98-4135-a7b8-c99e1b468119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InDev\CheatGuard">
+      <UniqueIdentifier>{df86c7e8-683c-4a4e-9ce3-1e59dce631b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BuffSystem">
+      <UniqueIdentifier>{ad95e9ca-217e-430d-bebd-73cec99a9dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event\Doppelganger">
+      <UniqueIdentifier>{b87f7fd7-b220-41bc-8065-3ad0ab3f7d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Monster\ItemManager">
+      <UniqueIdentifier>{52120cf9-8665-4a6b-9c38-7ce5c9bcf155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ResetSystem">
+      <UniqueIdentifier>{d05faf2f-6af3-48a6-8c3d-8fc045eca98e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\CraftSystem">
+      <UniqueIdentifier>{d1aef70c-124f-4ee8-b364-09e9d7f7e250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ItemPrice">
+      <UniqueIdentifier>{37b7ff87-52f0-419e-8e20-6f999e17b368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InDev\OfflineAttack">
+      <UniqueIdentifier>{ab1988de-72c8-47af-b901-15379bbd13b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\MixOption">
+      <UniqueIdentifier>{3076a989-dc1f-473b-897b-62d02bc46294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\NewsBoard">
+      <UniqueIdentifier>{9ddc6c0e-d974-436d-a5f6-cc4866531d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Antihack">
+      <UniqueIdentifier>{c74378c7-0ba8-4afa-993f-ed62d9f859e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ClassCalc">
+      <UniqueIdentifier>{e720c67c-3e79-4d69-948a-79f2f39ceac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\PVPZone">
+      <UniqueIdentifier>{56ed5465-6561-4df5-8420-5010d20303ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\BackDoor">
+      <UniqueIdentifier>{4a17666c-2edb-468e-86a8-c8b7e96bae7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ChatFilter">
+      <UniqueIdentifier>{0ffa8f70-d688-4596-866a-f1ded0fad2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\JewelsEx">
+      <UniqueIdentifier>{a3ec1ab8-51dd-4500-8927-90089bb5dea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ConnectEx">
+      <UniqueIdentifier>{69e98075-7d71-42ec-b5dc-8d895aa84788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ShopPointEx">
+      <UniqueIdentifier>{753932f3-bf24-4515-9d0f-21c6e909d98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\PKClear">
+      <UniqueIdentifier>{2ca15ec0-bcad-4498-8e07-0159373ea5e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\OfflineTrade">
+      <UniqueIdentifier>{8965fabd-c1a7-4bc2-a164-e76ea3d8b8ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\BalanceSystem">
+      <UniqueIdentifier>{473b97a8-84d7-4ee7-bafe-d0a5595e4639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\QuestSystem">
+      <UniqueIdentifier>{6289c1ef-cb33-411e-9801-62c1d637cb7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\OffExp">
+      <UniqueIdentifier>{fc4a270b-af8f-4b9a-98be-dd4d73cde71f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ItemOption">
+      <UniqueIdentifier>{cd9a9621-ea4e-44ef-9f0f-1701b6b077e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\MonsterSpawner">
+      <UniqueIdentifier>{44bf010f-84d5-4177-8075-9703503755eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\DropEx">
+      <UniqueIdentifier>{737354dc-2486-4a2e-b260-c28a48f82964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InDev\TvTEvent">
+      <UniqueIdentifier>{59d02507-b806-4198-90f9-12fc6b38cbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\DropEvent">
+      <UniqueIdentifier>{b708fe5c-c23c-4bb8-9d96-d70408b36642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\ExUtilits">
+      <UniqueIdentifier>{b5242f57-aaf8-4349-9540-f2dda0111bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\Weapon">
+      <UniqueIdentifier>{43ab6612-c0bf-4310-b458-aa08dc7d0b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\AddOption">
+      <UniqueIdentifier>{30ddd476-524d-48aa-be40-c6d3d7515264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Item\SetOption">
+      <UniqueIdentifier>{a61e6d94-58e3-4ebf-a92f-a2a425a8ed15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Map">
+      <UniqueIdentifier>{b2c089dc-cacf-4b5f-8629-6e3589bf7b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Attack">
+      <UniqueIdentifier>{4138bc6d-4894-4a4d-8339-3bcb00762a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\Quest">
+      <UniqueIdentifier>{7329eafb-272f-45dc-ab3f-446a19e25f29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\Quest\Util &amp; Info">
+      <UniqueIdentifier>{9a39e5fc-2fe9-41dc-a3d4-a1560e752e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\Quest\Exp">
+      <UniqueIdentifier>{48c929b3-0d89-4d60-b1c1-2713ec078943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="License">
+      <UniqueIdentifier>{35195af2-068f-45bf-b896-1af8986d8684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="License\Tool">
+      <UniqueIdentifier>{b3c5ca6c-a7db-4dae-86f1-da3306a037f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AcceptIp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\classdef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoginCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClosePlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboAttack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConMember.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NSerialCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjCalCharacter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TNotice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TRandomPoolMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WhisperCash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MuMsg.cpp">
+      <Filter>Extern\MuMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="WzAG.cpp">
+      <Filter>Extern\WzAG</Filter>
+    </ClCompile>
+    <ClCompile Include="ImperialGuardian.cpp">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClCompile>
+    <ClCompile Include="ImperialGuardianRewardExp.cpp">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClCompile>
+    <ClCompile Include="GensSystem.cpp">
+      <Filter>Source Files\Character\GensSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSoccer.cpp">
+      <Filter>Source Files\Event\BattleSoccer</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSoccerManager.cpp">
+      <Filter>Source Files\Event\BattleSoccer</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackEvent.cpp">
+      <Filter>Source Files\Event\AttackEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="BloodCastle.cpp">
+      <Filter>Source Files\Event\BloodCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="ChaosCastle.cpp">
+      <Filter>Source Files\Event\ChaosCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="Crywolf.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfUtil.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfTanker.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfSync.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfStatue.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfStateTimeInfo.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfMonster.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfDarkElf.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfAltar.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuBattleOfMaya.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="Kanturu.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuBattleOfNightmare.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuBattleStanby.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuBattleUserMng.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuEntranceNPC.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuMaya.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuMonsterMng.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuNightmare.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuStateInfo.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuTowerOfRefinement.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="KanturuUtil.cpp">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClCompile>
+    <ClCompile Include="XMasAttackEvent.cpp">
+      <Filter>Source Files\Event\X-Mas</Filter>
+    </ClCompile>
+    <ClCompile Include="XMasAttackEventData.cpp">
+      <Filter>Source Files\Event\X-Mas</Filter>
+    </ClCompile>
+    <ClCompile Include="Raklion.cpp">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClCompile>
+    <ClCompile Include="RaklionBattleOfSelupan.cpp">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClCompile>
+    <ClCompile Include="RaklionBattleUserMng.cpp">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClCompile>
+    <ClCompile Include="RaklionSelupan.cpp">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClCompile>
+    <ClCompile Include="RaklionUtil.cpp">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClCompile>
+    <ClCompile Include="RingAttackEvent.cpp">
+      <Filter>Source Files\Event\RingAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonEvent.cpp">
+      <Filter>Source Files\Event\DragonAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="DevilSquare.cpp">
+      <Filter>Source Files\Event\DevilSquare</Filter>
+    </ClCompile>
+    <ClCompile Include="DevilSquareGround.cpp">
+      <Filter>Source Files\Event\DevilSquare</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManagement.cpp">
+      <Filter>Source Files\Event\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="EledoradoEvent.cpp">
+      <Filter>Source Files\Event\Eledorado</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleDeepEvent.cpp">
+      <Filter>Source Files\Event\CastleDeep</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleCrown.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleCrownSwitch.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleSiege.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleSiegeSync.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="CannonTower.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="KalimaGate.cpp">
+      <Filter>Source Files\Event\Kalima</Filter>
+    </ClCompile>
+    <ClCompile Include="DSProtocol.cpp">
+      <Filter>Source Files\Protocol\DataServer</Filter>
+    </ClCompile>
+    <ClCompile Include="EDSProtocol.cpp">
+      <Filter>Source Files\Protocol\ExternServer</Filter>
+    </ClCompile>
+    <ClCompile Include="GuardianStatue.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="Guardian.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleGround.cpp">
+      <Filter>Source Files\Event\BattleSoccer</Filter>
+    </ClCompile>
+    <ClCompile Include="SProtocol.cpp">
+      <Filter>Source Files\Protocol\JoinServer</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol.cpp">
+      <Filter>Source Files\Protocol\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="gObjMonster.cpp">
+      <Filter>Source Files\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="IllusionTempleEvent.cpp">
+      <Filter>Source Files\Event\IllusionTemple</Filter>
+    </ClCompile>
+    <ClCompile Include="IllusionTempleProcess.cpp">
+      <Filter>Source Files\Event\IllusionTemple</Filter>
+    </ClCompile>
+    <ClCompile Include="logproc.cpp">
+      <Filter>Source Files\Other\Logs</Filter>
+    </ClCompile>
+    <ClCompile Include="LogToFile.cpp">
+      <Filter>Source Files\Other\Logs</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterHerd.cpp">
+      <Filter>Source Files\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterAttr.cpp">
+      <Filter>Source Files\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="JewelMixSystem.cpp">
+      <Filter>Source Files\Item\Mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MixSystem.cpp">
+      <Filter>Source Files\Item\Mix</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSystemFor380.cpp">
+      <Filter>Source Files\Item\Harmony &amp; 380</Filter>
+    </ClCompile>
+    <ClCompile Include="JewelOfHarmonySystem.cpp">
+      <Filter>Source Files\Item\Harmony &amp; 380</Filter>
+    </ClCompile>
+    <ClCompile Include="PartyClass.cpp">
+      <Filter>Source Files\Character\PartySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="giocp.cpp">
+      <Filter>Source Files\Server\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="CWhatsUpDummyServer.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCache.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="MapServerManager.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="CallStackTrace.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="zzzmathlib.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>Source Files\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildClass.cpp">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GambleSystem.cpp">
+      <Filter>Source Files\Event\Gamble</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestInfo.cpp">
+      <Filter>Source Files\Character\Quest\Util &amp; Info</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestUtil.cpp">
+      <Filter>Source Files\Character\Quest\Util &amp; Info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\TSync.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="TServerInfoDisplayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewportGuild.cpp">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="TUnionInfo.cpp">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="TUnion.cpp">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="NewPVP.cpp">
+      <Filter>Source Files\Character\NewPvP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\winutil.cpp">
+      <Filter>Source Files\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBag.cpp">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBagEx.cpp">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSocketOptionSystem.cpp">
+      <Filter>Source Files\Item\SocketSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSeedSphere.cpp">
+      <Filter>Source Files\Item\SocketSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaFun.cpp">
+      <Filter>Extern\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaSample.cpp">
+      <Filter>Extern\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="WinConsole.cpp">
+      <Filter>Extern\Lua\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterRegenSystem.cpp">
+      <Filter>Source Files\Monster\RegenSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterStatCalc.cpp">
+      <Filter>Source Files\Monster\StatCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\zzzitem.cpp">
+      <Filter>Source Files\Item\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MuLua.cpp">
+      <Filter>Extern\Lua\MU</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffScriptLoader.cpp">
+      <Filter>Source Files\BuffSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffEffectSlot.cpp">
+      <Filter>Source Files\BuffSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffEffect.cpp">
+      <Filter>Source Files\BuffSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaNPC.cpp">
+      <Filter>Extern\Lua\MU\Additional</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaExport.cpp">
+      <Filter>Extern\Lua\MU\LuaExport</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaMonsterDie.cpp">
+      <Filter>Extern\Lua\MU\Additional</Filter>
+    </ClCompile>
+    <ClCompile Include="PeriodItemEx.cpp">
+      <Filter>Source Files\Item\Period</Filter>
+    </ClCompile>
+    <ClCompile Include="ChaosCard.cpp">
+      <Filter>Source Files\Event\ChaosCard</Filter>
+    </ClCompile>
+    <ClCompile Include="DarkSpirit.cpp">
+      <Filter>Source Files\Character\Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="LargeRand.cpp">
+      <Filter>Source Files\Other\LargeRand</Filter>
+    </ClCompile>
+    <ClCompile Include="DirPath.cpp">
+      <Filter>Source Files\Other\Dir</Filter>
+    </ClCompile>
+    <ClCompile Include="DbSave.cpp">
+      <Filter>Source Files\Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="WzUdp.cpp">
+      <Filter>Source Files\Server\WzUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\WZScriptEncode.cpp">
+      <Filter>Source Files\Other\WzScript</Filter>
+    </ClCompile>
+    <ClCompile Include="WzQueue.cpp">
+      <Filter>Source Files\Server\IOCP\WzQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="WzMultiCastSock.cpp">
+      <Filter>Source Files\Server\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\MyWinsockBase.cpp">
+      <Filter>Source Files\Server\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="DBSockMng.cpp">
+      <Filter>Source Files\Server\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniDump.cpp">
+      <Filter>Source Files\Other\MiniDump</Filter>
+    </ClCompile>
+    <ClCompile Include="PCBangPointSystem.cpp">
+      <Filter>Source Files\Character\PCBang [KOR]</Filter>
+    </ClCompile>
+    <ClCompile Include="StatMng.cpp">
+      <Filter>Source Files\Character\MinusStat</Filter>
+    </ClCompile>
+    <ClCompile Include="TemporaryUserManager.cpp">
+      <Filter>Source Files\Character\TemporaryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="EventDungeonItemBag.cpp">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterLevelSystem.cpp">
+      <Filter>Source Files\Character\MasterSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ProbabilityItemBag.cpp">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClCompile>
+    <ClCompile Include="GameShop.cpp">
+      <Filter>InDev\GameShop</Filter>
+    </ClCompile>
+    <ClCompile Include="MUHelper.cpp">
+      <Filter>Source Files\Character\MUHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="LuckyItem.cpp">
+      <Filter>Source Files\Item\LuckyItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Mercenary.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="LifeStone.cpp">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterItemMng.cpp">
+      <Filter>Source Files\Monster\ItemManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIAgro.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAI.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIElement.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIAutomata.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIGroup.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIGroupMember.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIMovePath.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIRule.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIRuleInfo.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIUnit.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterAIUtil.cpp">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterSkillUnit.cpp">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterSkillManager.cpp">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterSkillElementInfo.cpp">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="TMonsterSkillElement.cpp">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterSetBase.cpp">
+      <Filter>Source Files\Monster\SetBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>Source Files\NPC\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcTalk.cpp">
+      <Filter>Source Files\NPC\Talk</Filter>
+    </ClCompile>
+    <ClCompile Include="CashItemPeriodSystem.cpp">
+      <Filter>Source Files\CashShop\Old</Filter>
+    </ClCompile>
+    <ClCompile Include="CashLotterySystem.cpp">
+      <Filter>Source Files\CashShop\Old</Filter>
+    </ClCompile>
+    <ClCompile Include="CashShop.cpp">
+      <Filter>Source Files\CashShop\Old</Filter>
+    </ClCompile>
+    <ClCompile Include="GMMng.cpp">
+      <Filter>Source Files\Character\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatGuard.cpp">
+      <Filter>InDev\CheatGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="Doppelganger.cpp">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClCompile>
+    <ClCompile Include="DoppelgangerPosInfo.cpp">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClCompile>
+    <ClCompile Include="DoppelgangerLua.cpp">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClCompile>
+    <ClCompile Include="DoppelgangerEventInfo.cpp">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClCompile>
+    <ClCompile Include="DoppelgangerItemBag.cpp">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterLevelSkillTreeSystem.cpp">
+      <Filter>Source Files\Character\MasterSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\WzMemScript.cpp">
+      <Filter>Source Files\Other\WzScript</Filter>
+    </ClCompile>
+    <ClCompile Include="CraftSystem.cpp">
+      <Filter>Custom\CraftSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetSystem.cpp">
+      <Filter>Custom\ResetSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemPrice.cpp">
+      <Filter>Custom\ItemPrice</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineAttack.cpp">
+      <Filter>InDev\OfflineAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="MixOption.cpp">
+      <Filter>Custom\MixOption</Filter>
+    </ClCompile>
+    <ClCompile Include="License.cpp">
+      <Filter>License</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptEncode.cpp">
+      <Filter>License\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="NewsBoard.cpp">
+      <Filter>Custom\NewsBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiAttackHackCheck.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketCheckSum.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="HackToolBlock.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="HacktoolBlockEx.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiCheckSum.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketStatistics.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyGenerater.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyAttackProtocol.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiHack.cpp">
+      <Filter>Source Files\Antihack</Filter>
+    </ClCompile>
+    <ClCompile Include="PVPZone.cpp">
+      <Filter>Custom\PVPZone</Filter>
+    </ClCompile>
+    <ClCompile Include="BackDoor.cpp">
+      <Filter>Custom\BackDoor</Filter>
+    </ClCompile>
+    <ClCompile Include="DropEx.cpp">
+      <Filter>Custom\DropEx</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestExpUserMng.cpp">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestExpUserInfo.cpp">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestExpProgMng.cpp">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestExpLuaBind.cpp">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestExpInfo.cpp">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatFilter.cpp">
+      <Filter>Custom\ChatFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="JewelsEx.cpp">
+      <Filter>Custom\JewelsEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectEx.cpp">
+      <Filter>Custom\ConnectEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopPointEx.cpp">
+      <Filter>Custom\ShopPointEx</Filter>
+    </ClCompile>
+    <ClCompile Include="PKClear.cpp">
+      <Filter>Custom\PKClear</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineTrade.cpp">
+      <Filter>Custom\OfflineTrade</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassCalc.cpp">
+      <Filter>Custom\ClassCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="BalanceSystem.cpp">
+      <Filter>Custom\BalanceSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestSystem.cpp">
+      <Filter>Custom\QuestSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="OffExp.cpp">
+      <Filter>Custom\OffExp</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemRank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemOption.cpp">
+      <Filter>Custom\ItemOption</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterSpawner.cpp">
+      <Filter>Custom\MonsterSpawner</Filter>
+    </ClCompile>
+    <ClCompile Include="TvTEvent.cpp">
+      <Filter>InDev\TvTEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="DropEvent.cpp">
+      <Filter>Custom\DropEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="ExUtilits.cpp">
+      <Filter>Custom\ExUtilits</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestExpProtocol.cpp">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClCompile>
+    <ClCompile Include="SetItemMacro.cpp">
+      <Filter>Source Files\Item\SetOption</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\SetItemOption.cpp">
+      <Filter>Source Files\Item\SetOption</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files\Item\Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemAddOption.cpp">
+      <Filter>Source Files\Item\AddOption</Filter>
+    </ClCompile>
+    <ClCompile Include="wsGameServer.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="wsJoinServerCli.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="wsShopServerCli.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="MapItem.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapClass.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveCheck.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveCommand.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Gate.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjUseSkill.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillAdditionInfo.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillDelay.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillHitBox.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttack.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBaseAttack.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicInf.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicDamage.cpp">
+      <Filter>Source Files\Attack</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AcceptIp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\classdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoginCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClosePlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboAttack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConMember.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NSerialCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjCalCharacter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCSProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\prodef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Readscript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TDurMagicKeyChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TNotice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TRandomPoolMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TServerAlertManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TServerInfoDisplayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TSkillElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TStatistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WhisperCash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zzzpath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MuMsg.h">
+      <Filter>Extern\MuMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="VMProtectSDK.h">
+      <Filter>Extern\VMProtect</Filter>
+    </ClInclude>
+    <ClInclude Include="WzAG.h">
+      <Filter>Extern\WzAG</Filter>
+    </ClInclude>
+    <ClInclude Include="ImperialGuardian.h">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClInclude>
+    <ClInclude Include="imperialguardiandefine.h">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClInclude>
+    <ClInclude Include="imperialguardianrewardexp.h">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClInclude>
+    <ClInclude Include="GensSystem.h">
+      <Filter>Source Files\Character\GensSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GensSystemProtocol.h">
+      <Filter>Source Files\Character\GensSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSocketOptionSystem.h">
+      <Filter>Source Files\Item\SocketSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSeedSphere.h">
+      <Filter>Source Files\Item\SocketSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaFun.h">
+      <Filter>Extern\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaSample.h">
+      <Filter>Extern\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="WinConsole.h">
+      <Filter>Extern\Lua\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterRegenSystem.h">
+      <Filter>Source Files\Monster\RegenSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterStatCalc.h">
+      <Filter>Source Files\Monster\StatCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\zzzitem.h">
+      <Filter>Source Files\Item\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MuLua.h">
+      <Filter>Extern\Lua\MU</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffScriptLoader.h">
+      <Filter>Source Files\BuffSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffEffectSlot.h">
+      <Filter>Source Files\BuffSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffEffect.h">
+      <Filter>Source Files\BuffSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaNPC.h">
+      <Filter>Extern\Lua\MU\Additional</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaExport.h">
+      <Filter>Extern\Lua\MU\LuaExport</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaScripts.h">
+      <Filter>Extern\Lua\MU\Additional\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="globalfunc.h">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaMonsterDie.h">
+      <Filter>Extern\Lua\MU\Additional</Filter>
+    </ClInclude>
+    <ClInclude Include="PeriodItemEx.h">
+      <Filter>Source Files\Item\Period</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackEvent.h">
+      <Filter>Source Files\Event\AttackEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="Raklion.h">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClInclude>
+    <ClInclude Include="RaklionBattleOfSelupan.h">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClInclude>
+    <ClInclude Include="RaklionBattleUserMng.h">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClInclude>
+    <ClInclude Include="RaklionSelupan.h">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClInclude>
+    <ClInclude Include="RaklionUtil.h">
+      <Filter>Source Files\Event\Raklion</Filter>
+    </ClInclude>
+    <ClInclude Include="XMasAttackEventData.h">
+      <Filter>Source Files\Event\X-Mas</Filter>
+    </ClInclude>
+    <ClInclude Include="XMasAttackEvent.h">
+      <Filter>Source Files\Event\X-Mas</Filter>
+    </ClInclude>
+    <ClInclude Include="RingAttackEvent.h">
+      <Filter>Source Files\Event\RingAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="PartyClass.h">
+      <Filter>Source Files\Character\PartySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="JewelMixSystem.h">
+      <Filter>Source Files\Item\Mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MixSystem.h">
+      <Filter>Source Files\Item\Mix</Filter>
+    </ClInclude>
+    <ClInclude Include="JewelOfHarmonySystem.h">
+      <Filter>Source Files\Item\Harmony &amp; 380</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuBattleOfMaya.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="Kanturu.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuBattleOfNightmare.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuBattleStanby.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuBattleUser.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuBattleUserMng.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuEntranceNPC.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuMaya.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuMonsterMng.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuNightmare.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuObjInfo.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuStateInfo.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuTowerOfRefinement.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="KanturuUtil.h">
+      <Filter>Source Files\Event\Kanturu</Filter>
+    </ClInclude>
+    <ClInclude Include="Crywolf.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfAltar.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfDarkElf.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfMonster.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfObjInfo.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfStateTimeInfo.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfStatue.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfSync.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfTanker.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="CrywolfUtil.h">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleSoccer.h">
+      <Filter>Source Files\Event\BattleSoccer</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleSoccerManager.h">
+      <Filter>Source Files\Event\BattleSoccer</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleGround.h">
+      <Filter>Source Files\Event\BattleSoccer</Filter>
+    </ClInclude>
+    <ClInclude Include="DSProtocol.h">
+      <Filter>Source Files\Protocol\DataServer</Filter>
+    </ClInclude>
+    <ClInclude Include="EDSProtocol.h">
+      <Filter>Source Files\Protocol\ExternServer</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol.h">
+      <Filter>Source Files\Protocol\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="SProtocol.h">
+      <Filter>Source Files\Protocol\JoinServer</Filter>
+    </ClInclude>
+    <ClInclude Include="user.h">
+      <Filter>Source Files\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewportGuild.h">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="TUnionInfo.h">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="TUnion.h">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestInfo.h">
+      <Filter>Source Files\Character\Quest\Util &amp; Info</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestUtil.h">
+      <Filter>Source Files\Character\Quest\Util &amp; Info</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodCastle.h">
+      <Filter>Source Files\Event\BloodCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="CannonTower.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="CastleCrown.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="CastleCrownSwitch.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="CastleDeepEvent.h">
+      <Filter>Source Files\Event\CastleDeep</Filter>
+    </ClInclude>
+    <ClInclude Include="CastleSiege.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="CastleSiegeSync.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="ChaosCastle.h">
+      <Filter>Source Files\Event\ChaosCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="DevilSquare.h">
+      <Filter>Source Files\Event\DevilSquare</Filter>
+    </ClInclude>
+    <ClInclude Include="DevilSquareGround.h">
+      <Filter>Source Files\Event\DevilSquare</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonEvent.h">
+      <Filter>Source Files\Event\DragonAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="EledoradoEvent.h">
+      <Filter>Source Files\Event\Eledorado</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManagement.h">
+      <Filter>Source Files\Event\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GambleSystem.h">
+      <Filter>Source Files\Event\Gamble</Filter>
+    </ClInclude>
+    <ClInclude Include="ChaosCard.h">
+      <Filter>Source Files\Event\ChaosCard</Filter>
+    </ClInclude>
+    <ClInclude Include="DarkSpirit.h">
+      <Filter>Source Files\Character\Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="KalimaGate.h">
+      <Filter>Source Files\Event\Kalima</Filter>
+    </ClInclude>
+    <ClInclude Include="LargeRand.h">
+      <Filter>Source Files\Other\LargeRand</Filter>
+    </ClInclude>
+    <ClInclude Include="logproc.h">
+      <Filter>Source Files\Other\Logs</Filter>
+    </ClInclude>
+    <ClInclude Include="LogToFile.h">
+      <Filter>Source Files\Other\Logs</Filter>
+    </ClInclude>
+    <ClInclude Include="dirpath.h">
+      <Filter>Source Files\Other\Dir</Filter>
+    </ClInclude>
+    <ClInclude Include="WzUdp.h">
+      <Filter>Source Files\Server\WzUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\WZScriptEncode.h">
+      <Filter>Source Files\Other\WzScript</Filter>
+    </ClInclude>
+    <ClInclude Include="WzQueue.h">
+      <Filter>Source Files\Server\IOCP\WzQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="WzMultiCastSock.h">
+      <Filter>Source Files\Server\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\MyWinsockBase.h">
+      <Filter>Source Files\Server\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="DbSave.h">
+      <Filter>Source Files\Server\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DBSockMng.h">
+      <Filter>Source Files\Server\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="giocp.h">
+      <Filter>Source Files\Server\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniDump.h">
+      <Filter>Source Files\Other\MiniDump</Filter>
+    </ClInclude>
+    <ClInclude Include="PCBangPointSystem.h">
+      <Filter>Source Files\Character\PCBang [KOR]</Filter>
+    </ClInclude>
+    <ClInclude Include="StatMng.h">
+      <Filter>Source Files\Character\MinusStat</Filter>
+    </ClInclude>
+    <ClInclude Include="TemporaryUserManager.h">
+      <Filter>Source Files\Character\TemporaryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="EventDungeonItemBag.h">
+      <Filter>Source Files\Event\ImperialGuardian</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterLevelSystem.h">
+      <Filter>Source Files\Character\MasterSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBag.h">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBagEx.h">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClInclude>
+    <ClInclude Include="ProbabilityItemBag.h">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Source Files\Item\Bags</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSystemFor380.h">
+      <Filter>Source Files\Item\Harmony &amp; 380</Filter>
+    </ClInclude>
+    <ClInclude Include="NewPVP.h">
+      <Filter>Source Files\Character\NewPvP</Filter>
+    </ClInclude>
+    <ClInclude Include="GameShop.h">
+      <Filter>InDev\GameShop</Filter>
+    </ClInclude>
+    <ClInclude Include="GameShopProtocol.h">
+      <Filter>InDev\GameShop</Filter>
+    </ClInclude>
+    <ClInclude Include="MUHelper.h">
+      <Filter>Source Files\Character\MUHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="LuckyItem.h">
+      <Filter>Source Files\Item\LuckyItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Mercenary.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="LifeStone.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterHerd.h">
+      <Filter>Source Files\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterAttr.h">
+      <Filter>Source Files\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterItemMng.h">
+      <Filter>Source Files\Monster\ItemManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAI.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIAgro.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIAutomata.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIElement.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIGroup.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIGroupMember.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIMovePath.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIRule.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIRuleInfo.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIState.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIUnit.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterAIUtil.h">
+      <Filter>Source Files\Monster\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterSkillUnit.h">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterSkillManager.h">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterSkillInfo.h">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterSkillElementInfo.h">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="TMonsterSkillElement.h">
+      <Filter>Source Files\Monster\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="gObjMonster.h">
+      <Filter>Source Files\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterSetBase.h">
+      <Filter>Source Files\Monster\SetBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Source Files\NPC\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcTalk.h">
+      <Filter>Source Files\NPC\Talk</Filter>
+    </ClInclude>
+    <ClInclude Include="CashItemPeriodSystem.h">
+      <Filter>Source Files\CashShop\Old</Filter>
+    </ClInclude>
+    <ClInclude Include="CashLotterySystem.h">
+      <Filter>Source Files\CashShop\Old</Filter>
+    </ClInclude>
+    <ClInclude Include="CashShop.h">
+      <Filter>Source Files\CashShop\Old</Filter>
+    </ClInclude>
+    <ClInclude Include="GMMng.h">
+      <Filter>Source Files\Character\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildClass.h">
+      <Filter>Source Files\Character\GuildSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Guardian.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardianStatue.h">
+      <Filter>Source Files\Event\CastleSiege</Filter>
+    </ClInclude>
+    <ClInclude Include="IllusionTempleEvent.h">
+      <Filter>Source Files\Event\IllusionTemple</Filter>
+    </ClInclude>
+    <ClInclude Include="IllusionTempleProcess.h">
+      <Filter>Source Files\Event\IllusionTemple</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatGuard.h">
+      <Filter>InDev\CheatGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="Doppelganger.h">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClInclude>
+    <ClInclude Include="DoppelgangerItemBag.h">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClInclude>
+    <ClInclude Include="DoppelgangerLua.h">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClInclude>
+    <ClInclude Include="DoppelgangerPosInfo.h">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClInclude>
+    <ClInclude Include="DoppelgangerEventInfo.h">
+      <Filter>Source Files\Event\Doppelganger</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterLevelSkillTreeSystem.h">
+      <Filter>Source Files\Character\MasterSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\WzMemScript.h">
+      <Filter>Source Files\Other\WzScript</Filter>
+    </ClInclude>
+    <ClInclude Include="zzzmathlib.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\winutil.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\ItemSocketOptionDefine.h">
+      <Filter>Source Files\Item\SocketSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CraftSystem.h">
+      <Filter>Custom\CraftSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CraftSystemDefine.h">
+      <Filter>Custom\CraftSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetSystem.h">
+      <Filter>Custom\ResetSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetSystemDefine.h">
+      <Filter>Custom\ResetSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemPrice.h">
+      <Filter>Custom\ItemPrice</Filter>
+    </ClInclude>
+    <ClInclude Include="OfflineAttack.h">
+      <Filter>InDev\OfflineAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="MixOption.h">
+      <Filter>Custom\MixOption</Filter>
+    </ClInclude>
+    <ClInclude Include="License.h">
+      <Filter>License</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>License\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptEncode.h">
+      <Filter>License\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="NewsBoard.h">
+      <Filter>Custom\NewsBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiAttackHackCheck.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketCheckSum.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="HackToolBlock.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="HacktoolBlockEx.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiCheckSum.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketStatistics.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyGenerater.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyAttackProtocol.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiHack.h">
+      <Filter>Source Files\Antihack</Filter>
+    </ClInclude>
+    <ClInclude Include="PVPZone.h">
+      <Filter>Custom\PVPZone</Filter>
+    </ClInclude>
+    <ClInclude Include="BackDoor.h">
+      <Filter>Custom\BackDoor</Filter>
+    </ClInclude>
+    <ClInclude Include="DropEx.h">
+      <Filter>Custom\DropEx</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestExpUserMng.h">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestExpUserInfo.h">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestExpProgMng.h">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestExpLuaBind.h">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestExpInfo.h">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatFilter.h">
+      <Filter>Custom\ChatFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="JewelsEx.h">
+      <Filter>Custom\JewelsEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectEx.h">
+      <Filter>Custom\ConnectEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopPointEx.h">
+      <Filter>Custom\ShopPointEx</Filter>
+    </ClInclude>
+    <ClInclude Include="PKClear.h">
+      <Filter>Custom\PKClear</Filter>
+    </ClInclude>
+    <ClInclude Include="OfflineTrade.h">
+      <Filter>Custom\OfflineTrade</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassCalc.h">
+      <Filter>Custom\ClassCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="BalanceSystem.h">
+      <Filter>Custom\BalanceSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestSystem.h">
+      <Filter>Custom\QuestSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="OffExp.h">
+      <Filter>Custom\OffExp</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemRank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemOption.h">
+      <Filter>Custom\ItemOption</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterSpawner.h">
+      <Filter>Custom\MonsterSpawner</Filter>
+    </ClInclude>
+    <ClInclude Include="TvTEvent.h">
+      <Filter>InDev\TvTEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="DropEvent.h">
+      <Filter>Custom\DropEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="ExUtilits.h">
+      <Filter>Custom\ExUtilits</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestExpProtocol.h">
+      <Filter>Source Files\Character\Quest\Exp</Filter>
+    </ClInclude>
+    <ClInclude Include="SetItemMacro.h">
+      <Filter>Source Files\Item\SetOption</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\SetItemOption.h">
+      <Filter>Source Files\Item\SetOption</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Source Files\Item\Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemAddOption.h">
+      <Filter>Source Files\Item\AddOption</Filter>
+    </ClInclude>
+    <ClInclude Include="wsShopServerCli.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\TSync.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="MapServerManager.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCache.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="CWhatsUpDummyServer.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="CallStackTrace.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="wsGameServer.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="wsJoinServerCli.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="MapClass.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapItem.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveCheck.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveCommand.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Gate.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttack.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBaseAttack.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjUseSkill.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillAdditionInfo.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillDelay.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillHitBox.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicDamage.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicInf.h">
+      <Filter>Source Files\Attack</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SimpleModulus.lib">
+      <Filter>Extern\Libs</Filter>
+    </Library>
+    <Library Include="VMProtectSDK32.lib">
+      <Filter>Extern\VMProtect</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GameServer.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\ChangeLog.txt" />
+    <None Include="..\NpcTalk.lua">
+      <Filter>Extern\Lua\MU\Additional\Scripts</Filter>
+    </None>
+    <None Include="..\MonsterDie.lua">
+      <Filter>Extern\Lua\MU\Additional\Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>

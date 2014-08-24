@@ -6,7 +6,6 @@
 #include "WZIPCheck.h"
 #include "BadSyntaxChk.h"
 #include "MapServerManager_DS.h"
-// -----------------------------------------------------------------------
 
 char szKorSkillTextFileName[256];
 char szKorItemTextFileName[256];
@@ -42,20 +41,19 @@ classdef DCInfo;
 GameShopDBSet gGameShopDB;
 GensDBSet gGensDBSet;
 CQuestExpDBSet g_QuestExpDBSet;
-// -----------------------------------------------------------------------
 
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	gWindow.InitInstance(hInstance);
-	// ----	
 	return 0;
 }
-// -----------------------------------------------------------------------
 
 void Init()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
-	bool Return;
+#endif
+		bool Return;
 	char szText[256];
 	// ----
 	DCInfo.SetMabubBanjiOption(true);
@@ -163,7 +161,7 @@ void Init()
 
 	if(gGSDbSet.CheckMuDBIdentification() == FALSE)
 	{
-//		MsgBox("¡Ù Unknow MuDB Id.");
+		//		MsgBox("¡Ù Unknow MuDB Id.");
 	}
 
 	gItemCount = gGSDbSet.GetCount();
@@ -205,7 +203,7 @@ void Init()
 	{
 		Return = false;
 	}
-	
+
 	g_WZIPCheck.Init();
 
 	gWindow.PrintLine(0);
@@ -215,10 +213,8 @@ void Init()
 	CreateGIocp(gSettings.ServerPort);
 	//-> Maybe for send invite to GS?
 	wsjServer.MyWinsockBase::CreateSocket();
-#ifdef LICENSE
-	g_License.Load();
-#endif
 	wsjServer.CreateServer(NULL, gSettings.ServerPort+1, 2026, 0);
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
-// -----------------------------------------------------------------------

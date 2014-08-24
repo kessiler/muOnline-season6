@@ -1,0 +1,5 @@
+# Microsoft Developer Studio Generated Dependency File, included by GGSvr.mak
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

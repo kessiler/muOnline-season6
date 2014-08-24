@@ -23,8 +23,8 @@ void Settings::ReadData(char * File)
 		this->MaxLogCount		= GetPrivateProfileIntA("Settings", "MaxLogCount", 100, File);
 		this->MaxServerCount	= GetPrivateProfileIntA("Settings", "MaxServerCount", 100, File);
 		this->MaxBuffSize		= GetPrivateProfileIntA("Settings", "MaxBuffSize", 16384, File);
-		this->CreateNewAccounts	= GetPrivateProfileIntA("Settings", "CreateAccounts", true, File);
-		this->UseDefaultClass	= GetPrivateProfileIntA("Settings", "UseDefaultClass", true, File);
+		this->CreateNewAccounts	= GetPrivateProfileIntA("Settings", "CreateAccounts", 1, File);
+		this->UseDefaultClass	= GetPrivateProfileIntA("Settings", "UseDefaultClass", 1, File);
 		// ----
 		GetPrivateProfileString("Connect", "DNS", "MuOnline", this->ConnectDNS, sizeof(this->ConnectDNS), File);
 		GetPrivateProfileString("Connect", "DBLogin", "Admin", this->ConnectLogin, sizeof(this->ConnectLogin), File);

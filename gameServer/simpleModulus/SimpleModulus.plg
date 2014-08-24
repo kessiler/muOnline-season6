@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SimpleModulus - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\eRRoR\LOCALS~1\Temp\RSP120.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/SimpleModulus.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Developement\Sources\C++\Mu-Studio\GameServer\SimpleModulus\SimpleModulus.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eRRoR\LOCALS~1\Temp\RSP120.tmp" 
+Creating temporary file "C:\DOCUME~1\eRRoR\LOCALS~1\Temp\RSP121.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/SimpleModulus.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Developement\Sources\C++\Mu-Studio\GameServer\SimpleModulus\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\eRRoR\LOCALS~1\Temp\RSP121.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\SimpleModulus.lib"  ".\Release\SimpleModulus.obj" ".\Release\StdAfx.obj" "
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+SimpleModulus.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+SimpleModulus.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

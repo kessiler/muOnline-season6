@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "ServerPrc.h"
-#include "VMProtectSDK.h"
+#ifdef VMPROTECT
+	#include "VMProtectSDK.h"
+#endif
 // -----------------------------------------------------------------------
 
 Window	gWindow;

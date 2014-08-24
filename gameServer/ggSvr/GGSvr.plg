@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GGSvr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\HP_ADM~1\LOCALS~1\Temp\RSP3C4.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "GGSVR_EXPORTS" /Fp"Release/GGSvr.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Mu-Studio_BACK_UP\Mu-Studio\GameServer\GGSvr\GGSvr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\HP_ADM~1\LOCALS~1\Temp\RSP3C4.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\GGSvr.lib"  ".\Release\CSAuth2.obj" ".\Release\GGSvr.obj" ".\Release\StdAfx.obj" "
+<h3>Output Window</h3>
+Compiling...
+GGSvr.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+GGSvr.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

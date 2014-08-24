@@ -4,13 +4,13 @@
 class Settings
 {
 public:
-	int		ServerPort;
-	int		MaxThreadCount;
-	int		MaxLogCount;
-	int		MaxBuffSize;
-	int		MaxServerCount;
-	bool	CreateNewAccounts;
-	bool	UseDefaultClass;
+	unsigned int ServerPort;
+	unsigned int MaxThreadCount;
+	unsigned int MaxLogCount;
+	unsigned int MaxBuffSize;
+	unsigned int MaxServerCount;
+	unsigned int CreateNewAccounts;
+	unsigned int UseDefaultClass;
 	// ----
 	char	ConnectDNS[52];
 	char	ConnectLogin[52];
@@ -19,4 +19,4 @@ public:
 	void	ReadData(char * File);
 	// ----
 }; extern Settings gSettings;
-// -----------------------------------------------------------------------
+// ----------------------------------------------------------------------
