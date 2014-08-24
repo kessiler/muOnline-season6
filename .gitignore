@@ -1,8 +1,11 @@
 # User-specific files
 dataServer/*.suo
-dataServer/*.user
+dataServer/zDataServer/*.user
 client/*.suo
+client/zClient/*.user
 client/*.user
+gameServer/*.suo
+gameServer/gameServer/*.user
 
 # SQL Server files
 dataServer/*.mdf
@@ -11,6 +14,9 @@ dataServer/*.ldf
 client/*.mdf
 client/*.sdf
 client/*.ldf
+gameServer/*.mdf
+gameServer/*.sdf
+gameServer/*.ldf
 
 # Temporary files
 dataserver/ipch
@@ -24,3 +30,9 @@ client/Release
 client/zClient/Release
 client/Debug
 client/zClient/Debug
+
+gameServer/ipch
+gameServer/Release
+gameServer/gameServer/Release
+gameServer/Debug
+gameServer/gameServer/Debug
