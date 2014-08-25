@@ -363,7 +363,6 @@ BYTE CJewelOfHarmonySystem::_GetItemOptionLevel(CItem *pItem)
 //00638200	-> OK
 BOOL CJewelOfHarmonySystem::IsStrengthenByJewelOfHarmony(CItem *pItem)
 {
-	return false;
 	if ( this->GetItemStrengthenOption(pItem) >0  )
 		return TRUE;
 
