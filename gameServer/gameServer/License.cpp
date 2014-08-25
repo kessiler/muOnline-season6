@@ -13,9 +13,13 @@ bool IsLicenseChecked = true;
 
 License::License()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	this->Init();
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
@@ -27,15 +31,21 @@ License::~License()
 
 void License::Init()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	ZeroMemory(&this->m_Data, sizeof(this->m_Data));
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 void License::Load()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	// ----
 	this->Init();
 #if( __ROOT__ == 1 )
@@ -64,7 +74,9 @@ void License::Load()
 	this->GetHash();
 	this->SendRequest();
 #endif
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
@@ -111,18 +123,24 @@ void License::GetCustomState()
 
 void License::GetDrive()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	char VolumeNameBuffer[100], FileSystemNameBuffer[100];
 	LPDWORD Len, SystemFlag;
 	GetVolumeInformationA(NULL, VolumeNameBuffer, 100, 
 		&this->m_Data.DriveID, Len, SystemFlag, FileSystemNameBuffer, 100);
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 void License::GetAdapter()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	DWORD	BufferLength	= 0;
 	LPBYTE	Buffer			= 0;
 	// ----
@@ -149,13 +167,17 @@ void License::GetAdapter()
 	}
 	// ----
 	delete[] Buffer;
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 void License::GetHash()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	char Hash1[200], Hash2[200];
 	ZeroMemory(Hash1, sizeof(Hash1)-1);
 	ZeroMemory(Hash2, sizeof(Hash2)-1);
@@ -167,7 +189,9 @@ void License::GetHash()
 		this->m_Data.Adapter[7]);
 	sprintf(Hash2, "%d%d",
 		this->m_Data.CustomerID, this->m_Data.CurrentDay);
+#ifdef VM_PROTECT
 	VMEND
+#endif
 	GetMD5(Hash1, strlen(Hash1), this->m_Data.Hash1);
 	GetMD5(Hash2, strlen(Hash2), this->m_Data.Hash2);
 }
@@ -175,7 +199,9 @@ void License::GetHash()
 
 void License::SendRequest()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	std::string URL;
 	URL.resize(_MAX_PATH);
 	sprintf(&URL[0], GetText("mueu;>*$b*.C`pd`re+qyu>xa<4a'udut8$u"), GetText(LICENSE_SERVER), 
@@ -198,13 +224,17 @@ void License::SendRequest()
 	InternetCloseHandle(hHandle);
 	// ----
 	this->CheckKey();
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 void License::SendAlert(int Type, int Code)
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	std::string URL;
 	URL.resize(_MAX_PATH);
 	sprintf(&URL[0], GetText("mueu;>*$b*.C`pd`re+qyu>xa<4a'udut8$u#uhud, e7fnu`<4a"), 
@@ -227,13 +257,17 @@ void License::SendAlert(int Type, int Code)
 	// ----
 	InternetCloseHandle(hSession);
 	InternetCloseHandle(hHandle);
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 void License::CheckKey()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	std::string URL;
 	URL.resize(_MAX_PATH);
 	sprintf(&URL[0], GetText("mueu;>*$b*.Pfbtvr>*$b+uiq"), GetText(LICENSE_SERVER), this->m_Data.Hash2);
@@ -274,13 +308,17 @@ void License::CheckKey()
 	IsLicenseChecked = true;
 	double A3 = A2-A8-A1 + Module;
 	double T = A3 + A2;
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 void License::Destruct() 
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	static char templ[] =  
 		":Repeat\r\n"
 		"del \"%s\"\r\n"
@@ -311,13 +349,17 @@ void License::Destruct()
 		CloseHandle(hf) ;
 		ShellExecute(NULL, "open", temppath, NULL, NULL, SW_HIDE);
 	}
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 void License::CheckBan()
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	std::string URL;
 	URL.resize(_MAX_PATH);
 	sprintf(&URL[0], GetText("mueu;>*$b*@rfdbv.Sdo`e> e?qye"), GetText(LICENSE_SERVER), this->m_Data.CustomerID);
@@ -349,13 +391,17 @@ void License::CheckBan()
 		this->Destruct();
 		ExitProcess(0);
 	}
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -------------------------------------------------------------------------------
 
 LPSTR License::GetText(LPSTR EncodedChar)
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	BYTE XorKey[] = { 0x05, 0x01, 0x11 };
 	LPSTR Line = new char[strlen(EncodedChar)+1];
 	// ----
@@ -364,7 +410,9 @@ LPSTR License::GetText(LPSTR EncodedChar)
 		Line[i] = char(EncodedChar[i] ^ XorKey[i % 3]);
 	}
 	// ----
+#ifdef VM_PROTECT
 	VMEND
+#endif
 	return Line;
 }
 // -------------------------------------------------------------------------------

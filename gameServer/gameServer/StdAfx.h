@@ -76,7 +76,9 @@
 #include <afx.h>
 #include "MuMsg.h"
 #include "WzAG.h"
+#ifdef VM_PROTECT
 #include "VMProtectSDK.h"
+#endif
 #include "License.h"
 // ------------------------------------------------------------------------------
 

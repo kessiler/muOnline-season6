@@ -136,16 +136,16 @@ LRESULT CALLBACK About(HWND hInst, UINT message, WPARAM wParam, LPARAM lParam);
 
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	VMBEGIN
 #ifdef VMPROTECT
+	VMBEGIN
 	if( VMProtectIsDebuggerPresent(TRUE) != 0 )
 	{
 		g_License.SendAlert(3, 0);
 		g_License.Destruct();
 		ExitProcess(0);
 	}
-#endif
 	VMEND
+#endif
 #if defined __WHITE__ || __BEREZNUK__
 	LoadLibraryA("NSEngine.dll");
 #endif

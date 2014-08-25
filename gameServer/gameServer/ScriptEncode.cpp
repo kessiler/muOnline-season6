@@ -71,7 +71,9 @@ void ScriptEncode::Close()
 
 void ScriptEncode::Encode(char* buffer, int size)
 {
+#ifdef VM_PROTECT
 	VMBEGIN
+#endif
 	// ----
 	int i;
 	for (i=0;i<size; i++)
@@ -79,7 +81,9 @@ void ScriptEncode::Encode(char* buffer, int size)
 		buffer[i]=(char)(buffer[i]^XorTableLock[i%8]);	
 	}
 	// ----
+#ifdef VM_PROTECT
 	VMEND
+#endif
 }
 // -----------------------------------------------------------------------
 
