@@ -460,6 +460,9 @@ BOOL MapClass::ItemDrop(int type, int level, float dur,  int x, int y, BYTE Opti
 
 BOOL MapClass::MoneyItemDrop(int money, int x, int y)
 {
+	
+	if( money <= 0)
+		return false;
 	int count;
 	int counttot = 0;
 
