@@ -1087,7 +1087,7 @@ void gObjMonsterStateProc(LPOBJ lpObj, int aMsgCode, int aIndex, int aMsgSubCode
 #endif
 
 #ifdef WZQUEST
-		if( lpObj->Type == OBJ_MONSTER )
+		if( lpObj->Type == OBJ_MONSTER && gObj[aIndex].Type == OBJ_USER)
 		{
 			g_QuestExpProgMng.ChkUserQuestTypeMonsterKill(&gObj[aIndex], lpObj);
 			g_QuestExpProgMng.QuestMonsterItemDrop(0, &gObj[aIndex], lpObj);
