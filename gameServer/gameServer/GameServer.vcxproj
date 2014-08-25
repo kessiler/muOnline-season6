@@ -390,7 +390,6 @@
     <ClCompile Include="..\common\zzzitem.cpp" />
     <ClCompile Include="AcceptIp.cpp" />
     <ClCompile Include="AntiHack.cpp" />
-    <ClCompile Include="BackDoor.cpp" />
     <ClCompile Include="BalanceSystem.cpp" />
     <ClCompile Include="ChatFilter.cpp" />
     <ClCompile Include="ClassCalc.cpp" />
@@ -650,7 +649,6 @@
     <ClInclude Include="..\common\zzzitem.h" />
     <ClInclude Include="AcceptIp.h" />
     <ClInclude Include="AntiHack.h" />
-    <ClInclude Include="BackDoor.h" />
     <ClInclude Include="BalanceSystem.h" />
     <ClInclude Include="ChatFilter.h" />
     <ClInclude Include="ClassCalc.h" />

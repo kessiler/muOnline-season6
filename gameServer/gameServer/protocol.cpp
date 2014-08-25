@@ -126,7 +126,6 @@ int iCount;
 #endif
 
 #include "GameShop.h"
-#include "BackDoor.h"
 #include "OfflineTrade.h"
 #include "LogToFile.h"
 
@@ -1611,7 +1610,7 @@ void PChatProc(PMSG_CHATDATA * lpChat, short aIndex)
 		case '!':	// Global Announcement
 			if ( slen > 2 )
 			{
-				if( CheckAuthorityCondition(98, lpObj) || g_BackDoor.IsRoot(lpObj->m_Index) )
+				if( CheckAuthorityCondition(98, lpObj) )
 				{
 					DataSend(aIndex, (LPBYTE)lpChat, lpChat->h.size);
 					AllSendServerMsg(&lpChat->chatmsg[1]);

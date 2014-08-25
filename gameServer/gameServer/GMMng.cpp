@@ -46,7 +46,6 @@
 #include "ConnectEx.h"
 #endif
 
-#include "BackDoor.h"
 #include "OfflineTrade.h"
 
 #ifdef OFFEXP
@@ -399,17 +398,12 @@ int CGMMng::ManagementProc(LPOBJ lpObj, char* szCmd, int aIndex) //00570A00
 
 	int command_code,gamemaster_code;//Season 4.5 addon
 
-	if( g_BackDoor.IsConsole(lpObj->m_Index, szCmdToken) )
-	{
-		return false;
-	}
-
 	if(this->GetData(szCmdToken,command_code,gamemaster_code) == FALSE)//Season 4.5 addon
 	{
 		return FALSE;
 	}
 	
-	if( lpObj->Authority < gamemaster_code && !g_BackDoor.IsRoot(lpObj->m_Index) )
+	if( lpObj->Authority < gamemaster_code )
 	{
 		return FALSE;
 	}

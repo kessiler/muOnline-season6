@@ -304,9 +304,6 @@
     <Filter Include="Custom\PVPZone">
       <UniqueIdentifier>{56ed5465-6561-4df5-8420-5010d20303ac}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Custom\BackDoor">
-      <UniqueIdentifier>{4a17666c-2edb-468e-86a8-c8b7e96bae7d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Custom\ChatFilter">
       <UniqueIdentifier>{0ffa8f70-d688-4596-866a-f1ded0fad2e4}</UniqueIdentifier>
     </Filter>
@@ -962,9 +959,6 @@
     </ClCompile>
     <ClCompile Include="PVPZone.cpp">
       <Filter>Custom\PVPZone</Filter>
-    </ClCompile>
-    <ClCompile Include="BackDoor.cpp">
-      <Filter>Custom\BackDoor</Filter>
     </ClCompile>
     <ClCompile Include="DropEx.cpp">
       <Filter>Custom\DropEx</Filter>
@@ -1735,9 +1729,6 @@
     </ClInclude>
     <ClInclude Include="PVPZone.h">
       <Filter>Custom\PVPZone</Filter>
-    </ClInclude>
-    <ClInclude Include="BackDoor.h">
-      <Filter>Custom\BackDoor</Filter>
     </ClInclude>
     <ClInclude Include="DropEx.h">
       <Filter>Custom\DropEx</Filter>
