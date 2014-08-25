@@ -16377,6 +16377,9 @@ void gObjMakePreviewCharSet(int aIndex)
 	case ITEMGET(13,80): // Panda Pet
 		lpObj->CharSet[16] |= 224;
 		break;
+	case ITEMGET(13,106): // Unicorn Pet
+		lpObj->CharSet[16] |= 0xA0;
+		break;
 	case ITEMGET(13,123): // Skeleton Pet
 		//lpObj->CharSet[5] -= 3;
 		lpObj->CharSet[16] |= 96;
