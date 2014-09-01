@@ -120,16 +120,8 @@ BOOL CALLBACK Dialog_Settings(HWND Window, UINT Message, WPARAM WParam, LPARAM L
 			gWindow.SetTitle(Window, "zDataServer [%s] :: Settings", APP_VERSION_T);
 		}
 		break;
-		// --
 	case WM_COMMAND:
-		{
-			switch(WParam)
-			{
-				// --
-			}
-		}
-		break;
-		// --
+		break;		
 	case WM_CLOSE:
 		{
 			EndDialog(Window, false);
@@ -232,9 +224,9 @@ void Window::PrintLog(const char * Text, ...)
 	SYSTEMTIME	Time;
 	GetLocalTime(&Time);
 	// ----
-	DWORD   * Extern	= (DWORD*)&Text;
-	HWND	TextBox		= GetDlgItem(this->WindowID, IDC_LOGWINDOW);
-	int		Counter		= SendMessageA(TextBox, EM_GETLINECOUNT, 0, 0);
+	DWORD   * Extern	 = (DWORD*)&Text;
+	HWND	TextBox		 = GetDlgItem(this->WindowID, IDC_LOGWINDOW);
+	unsigned int Counter = SendMessageA(TextBox, EM_GETLINECOUNT, 0, 0);
 	// ----
 	if( Counter > gSettings.MaxLogCount )
 	{

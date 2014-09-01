@@ -310,28 +310,32 @@ typedef struct
 	short aIndex;
 	BYTE btResult;
 	BYTE IsSummonerEnable;
-}PMSG_ANS_SUMMONER_CREATE, *LPPMSG_ANS_SUMMONER_CREATE;
+	BYTE IsRageFighterEnable;
+}SDHP_ANS_ACCOUNTINFO, *LPSDHP_ANS_ACCOUNTINFO;
 
-void DGSummonerStateUpdatedSend(PMSG_ANS_SUMMONER_CREATE *lpMsg);
+void DGAccountInfoStateUpdatedSend(SDHP_ANS_ACCOUNTINFO *lpMsg);
 
-void GDSummonerStateUpdate(LPOBJ lpObj, int iIndex);
+void DGAccountInfoStateUpdate(LPOBJ lpObj, int iIndex);
+
 
 typedef struct
 {
 	PBMSG_HEAD h;
 	char szAccountID[MAX_ACCOUNT_LEN+1];
 	short aIndex;
-	BYTE btResult;
-}PMSG_ANS_SUMMONER_STATUS, *LPPMSG_ANS_SUMMONER_STATUS;
+	BYTE btResultSummoner;
+	BYTE btResultRageFighter;
+}PMSG_ANS_ACCOUNTINFO_STATUS, *LPPMSG_ANS_ACCOUNTINFO_STATUS;
 
 typedef struct
 {
 	PBMSG_HEAD h;
 	BYTE btResult;
 	BYTE IsSummonerEnable;
-}PMSG_UPD_SUMMONER_CREATE, *LPPMSG_UPD_SUMMONER_CREATE;
+	BYTE IsRageFighterEnable;
+}PMSG_UPD_ACCOUNTINFO_CREATE, *LPPMSG_UPD_ACCOUNTINFO_CREATE;
 
-void DGSummonerStateRecv(PMSG_ANS_SUMMONER_STATUS *lpMsg);
+void DGAccountInfoStateRecv(PMSG_ANS_ACCOUNTINFO_STATUS *lpMsg);
 void GDSetGameMasterEvent(char * Name, int aIndex);
 
 // -------------------------------------------------------------------------------

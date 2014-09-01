@@ -398,6 +398,49 @@ BOOL CAccountCharDBSet::SetSummonerCardInfo(char* Id)
 	return TRUE;
 }
 
+BOOL CAccountCharDBSet::GetRageFighterCardInfo(char* id)
+{
+	CString qSQL;
+	
+	qSQL.Format("SELECT RageFighter FROM AccountCharacter WHERE Id = '%s'", id);
+
+	if (m_DBQuery.Exec(qSQL) == FALSE)
+	{
+		m_DBQuery.Clear();
+		return FALSE;
+	}
+	
+	if (m_DBQuery.Fetch() == SQL_NO_DATA)
+	{
+		m_DBQuery.Clear();
+		return FALSE;		
+	}
+
+	if (m_DBQuery.GetInt(1) == FALSE)
+	{
+		m_DBQuery.Clear();
+		return FALSE;	
+	}
+
+	m_DBQuery.Clear();
+	return TRUE;
+}
+
+BOOL CAccountCharDBSet::SetRageFighterCardInfo(char* id)
+{
+	CString qSQL;
+	
+	qSQL.Format("UPDATE AccountCharacter SET RageFighter = 1 WHERE Id = '%s'", id);
+	
+	if (m_DBQuery.Exec(qSQL) == FALSE)
+	{
+		m_DBQuery.Clear();
+		return FALSE;
+	}
+	
+	return TRUE;
+}
+
 BOOL CAccountCharDBSet::SetCharacterExtendedInvenCountAdd(char* Name, BYTE btAddExtendedInvenCount)
 {
 	CString qSQL;

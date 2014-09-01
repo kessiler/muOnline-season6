@@ -65,7 +65,7 @@ void Init()
 	strcpy(szKorItemTextFileName, "..\\Data\\Item\\Item.txt");
 	strcpy(szKorSkillTextFileName, "..\\Data\\Skill\\Skill.txt");
 	strcpy(szItemTextFileName, "..\\Data\\Item\\Item.txt");
-	strcpy(szSkillTextFileName, "..\\\Data\\Skill\\Skill.txt");
+	strcpy(szSkillTextFileName, "..\\Data\\Skill\\Skill.txt");
 	strcat(szText, "(Kor)");
 
 	if(OpenItemScript(szKorItemTextFileName) == FALSE)

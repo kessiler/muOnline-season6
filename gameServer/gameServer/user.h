@@ -1043,6 +1043,7 @@ struct OBJECTSTRUCT
 	bool	m_bSkillKeyRecv;
 	int		m_iPeriodItemEffectIndex;
 	BYTE	Summoner;
+	BYTE	RageFighter;
 	SOCKET_OPTION_LIST	m_SeedOptionList[35];
 	SOCKET_OPTION_LIST	m_BonusOptionList[7];
 	SOCKET_OPTION_LIST	m_SetOptionList[2];

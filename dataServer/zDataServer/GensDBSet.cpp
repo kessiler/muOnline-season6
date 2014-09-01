@@ -14,13 +14,13 @@ GensDBSet::~GensDBSet()
 	// ----
 }
 // -----------------------------------------------------------------
-bool GensDBSet::Connect()
+BOOL GensDBSet::Connect()
 {
 	return CDBConBase::Connect(gSettings.ConnectLogin, gSettings.ConnectPassword);
 }
 // -----------------------------------------------------------------
 
-bool GensDBSet::GetMemberInfo(char * Character, PMSG_GENS_USERINFO_ANS * Result)
+BOOL GensDBSet::GetMemberInfo(char * Character, PMSG_GENS_USERINFO_ANS * Result)
 {
 	CString Query;
 	// ----
@@ -60,7 +60,7 @@ bool GensDBSet::GetMemberInfo(char * Character, PMSG_GENS_USERINFO_ANS * Result)
 }
 // -----------------------------------------------------------------
 
-bool GensDBSet::SaveMemberInfo(char * Character, BYTE Influence, int Contribute, int Class)
+BOOL GensDBSet::SaveMemberInfo(char * Character, BYTE Influence, int Contribute, int Class)
 {
 	bool ResultCheck = true;
 	// ----
@@ -80,7 +80,7 @@ bool GensDBSet::SaveMemberInfo(char * Character, BYTE Influence, int Contribute,
 }
 // -----------------------------------------------------------------
 
-bool GensDBSet::RegMemberInfo(char * Character, BYTE Influence)
+BOOL GensDBSet::RegMemberInfo(char * Character, BYTE Influence)
 {
 	bool ResultCheck = true;
 	// ----
@@ -100,7 +100,7 @@ bool GensDBSet::RegMemberInfo(char * Character, BYTE Influence)
 }
 // -----------------------------------------------------------------
 
-bool GensDBSet::DelMemberInfo(char * Character)
+BOOL GensDBSet::DelMemberInfo(char * Character)
 {
 	bool ResultCheck = true;
 	// ----
@@ -120,9 +120,7 @@ bool GensDBSet::DelMemberInfo(char * Character)
 }
 // -----------------------------------------------------------------
 
-#include <string>
-
-bool GensDBSet::CheckRewardDate(char * Character)
+BOOL GensDBSet::CheckRewardDate(char * Character)
 {
 	CString Query;
 	// ----
@@ -139,7 +137,7 @@ bool GensDBSet::CheckRewardDate(char * Character)
 }
 // -----------------------------------------------------------------
 
-bool GensDBSet::SetRewardDate(char * Character)
+BOOL GensDBSet::SetRewardDate(char * Character)
 {
 	CString Query;
 	// ----
@@ -156,7 +154,7 @@ bool GensDBSet::SetRewardDate(char * Character)
 }
 // -----------------------------------------------------------------
 
-bool GensDBSet::UpdateRanking()
+BOOL GensDBSet::UpdateRanking()
 {
 	if( !m_DBQuery.ExecH("GensRankingUpdate 1") || !m_DBQuery.ExecH("GensRankingUpdate 2") )
 	{

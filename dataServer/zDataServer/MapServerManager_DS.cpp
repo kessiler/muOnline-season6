@@ -55,7 +55,7 @@ void _MAPSVR_DATA::Clear(int iInitSetVal)
 
 CMapServerManager::CMapServerManager()
 {
-	srand(time(NULL)); 
+	srand((unsigned)time(NULL));
 	m_bMapDataLoadOk = FALSE;
 	m_lpThisMapSvrData = NULL;
 

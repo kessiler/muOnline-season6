@@ -122,15 +122,15 @@ public:
 	GensDBSet();
 	virtual ~GensDBSet();
 	// ----
-	bool Connect();
+	BOOL Connect();
 	// ----
-	bool GetMemberInfo(char * Character, PMSG_GENS_USERINFO_ANS * Result);
-	bool SaveMemberInfo(char * Character, BYTE Influence, int Contribute, int Class);
-	bool RegMemberInfo(char * Character, BYTE Influence);
-	bool DelMemberInfo(char * Character);
-	bool CheckRewardDate(char * Character);
-	bool SetRewardDate(char * Character);
-	bool UpdateRanking();
+	BOOL GetMemberInfo(char * Character, PMSG_GENS_USERINFO_ANS * Result);
+	BOOL SaveMemberInfo(char * Character, BYTE Influence, int Contribute, int Class);
+	BOOL RegMemberInfo(char * Character, BYTE Influence);
+	BOOL DelMemberInfo(char * Character);
+	BOOL CheckRewardDate(char * Character);
+	BOOL SetRewardDate(char * Character);
+	BOOL UpdateRanking();
 	// ----
 	void SQLExec(char * Text);
 };

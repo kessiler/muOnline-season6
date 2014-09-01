@@ -290,7 +290,7 @@ int CQuery::FindCol(char *name)
 {
 	int i;
 	for (i=0;i<nCol;i++) {
-		if (stricmp(name,(LPCTSTR)ColName[i])==0)
+		if (_stricmp(name,(LPCTSTR)ColName[i])==0)
 			return i+1;
 	}
 	return -1;

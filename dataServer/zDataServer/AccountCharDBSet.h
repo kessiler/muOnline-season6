@@ -26,12 +26,14 @@ typedef struct
 	BYTE ExpandedWarehouse;
 }AccountCharacterInfo, *LPAccountCharacterInfo;
 
+
 struct SDHP_ANS_SETACCOUNTINFO
 {
 	PBMSG_HEAD h;
 	char AccountId[MAX_IDSTRING+1];
 	short Number;
-	BYTE Result;
+	BYTE ResultSummoner;
+	BYTE ResultRageFighter;
 };
 
 struct SDHP_ANS_SET_EXTENDEDINVEN_COUNT
@@ -76,6 +78,8 @@ public:
 	BYTE GetAccountCharCtlCode(char* Id);
 	BOOL GetSummonerCardInfo(char* Id);
 	BOOL SetSummonerCardInfo(char* Id);
+	BOOL GetRageFighterCardInfo(char* id);
+	BOOL SetRageFighterCardInfo(char* id);
 	BOOL SetCharacterExtendedInvenCountAdd(char* Name, BYTE btAddExtendedInvenCount);
 	BOOL SetCharacterExtendedInvenCountReplace(char* Name, BYTE btReplaceExtendedInvenCount);
 	BOOL GetCharacterExtendedInvenCount(char* Name, BYTE* btAddExtendedInvenCount);

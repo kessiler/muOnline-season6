@@ -271,8 +271,9 @@ typedef struct
 	PBMSG_HEAD h;
 	char AccountId[MAX_IDSTRING+1];
 	short Number;
-}SDHP_REQ_SETACCOUNTINFO,*LPSDHP_REQ_SETACCOUNTINFO;
-
+	BYTE isSummoner;
+	BYTE isRageFighter;
+}SDHP_REQ_SETACCOUNTINFO,*LPSDHP_REQ_SETACCOUNTINFO;	
 
 typedef struct _tagMessageSystemBroadcast
 {

@@ -522,17 +522,17 @@ void ProtocolCore(BYTE protoNum, BYTE *aRecv, int aLen, short aIndex)
 		// ---
 	case 0xD7:	//Custom
 		{
+#if( __MUANGEL__ == 1 )
 			PMSG_DEFAULT2 * lpDef = (PMSG_DEFAULT2*)aRecv;
 			// ----
 			switch(lpDef->subcode)
 			{
-#if( __MUANGEL__ == 1 )
 			case 0:
 				UPDATEWAREHOUSESTATUS * pRequest = (UPDATEWAREHOUSESTATUS*)aRecv;
 				gACDbSet.SetWarehouseStatus(pRequest->AccountID, pRequest->Status);
 				break;
-#endif
 			}
+#endif
 		}
 		break;
 	}
@@ -564,6 +564,7 @@ struct SDHP_ANS_ACCOUNTINFO
 	short Number;
 	BYTE Result;
 	BYTE bSummoner;
+	BYTE bRageFighter;
 };
 
 void GJPCharacterListRequestCS(LPSDHP_GETCHARLIST lpCLMsg, int aIndex)
@@ -582,7 +583,7 @@ void GJPCharacterListRequestCS(LPSDHP_GETCHARLIST lpCLMsg, int aIndex)
 	Result.Number = lpCLMsg->Number;
 
 	Result.bSummoner = gACDbSet.GetSummonerCardInfo(Result.AccountId);
-
+	Result.bRageFighter = gACDbSet.GetRageFighterCardInfo(Result.AccountId);
 	Result.Result = 0;
 
 	wsjServer.DataSend(aIndex, (char*)&Result, sizeof(SDHP_ANS_ACCOUNTINFO));
@@ -3058,9 +3059,19 @@ void DGChangeName(LPSDHP_CHANGE_NAME lpMsg, int aIndex)
 void GJPSetAccountInfo(LPSDHP_REQ_SETACCOUNTINFO lpMsg, int aIndex)
 {
 	SDHP_ANS_SETACCOUNTINFO Result;
-
-	Result.Result = gACDbSet.SetSummonerCardInfo(lpMsg->AccountId);
 	
+	if (lpMsg->isSummoner == 1)
+	{
+		Result.ResultSummoner = gACDbSet.SetSummonerCardInfo(lpMsg->AccountId);
+	}
+	
+	if (lpMsg->isRageFighter == 1)
+	{
+		Result.ResultRageFighter = gACDbSet.SetRageFighterCardInfo(lpMsg->AccountId);
+	}
+
+	
+
 	memset(Result.AccountId, 0, MAX_IDSTRING+1);
 	memcpy(Result.AccountId, lpMsg->AccountId, MAX_IDSTRING);
 	

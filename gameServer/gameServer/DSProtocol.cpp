@@ -310,10 +310,10 @@ void DataServerProtocolCore(BYTE protoNum, BYTE *aRecv, int aLen)
 
 		//Season3
 		case 0xA1:
-			DGSummonerStateUpdatedSend((PMSG_ANS_SUMMONER_CREATE *)aRecv);
+			DGAccountInfoStateUpdatedSend((SDHP_ANS_ACCOUNTINFO *)aRecv);
 			break;
 		case 0xA2:
-			DGSummonerStateRecv((PMSG_ANS_SUMMONER_STATUS *)aRecv);
+			DGAccountInfoStateRecv((PMSG_ANS_ACCOUNTINFO_STATUS *)aRecv);
 			break;
 		case 0xFF:	// Test Packet
 			{
@@ -1024,12 +1024,12 @@ void JGPGetCharList(BYTE *lpRecv)
 		}
 		// ----
 #ifdef CHARCREATE_TEMP
-		if( HightLevel >= gCreateSUMLevel )
+		if( HightLevel >= gCreateSUMLevel || gObj[aIndex].Summoner == 1 )
 		{
 			GenerableClass += 1;
 		}
 		// ----
-		if( HightLevel >= gCreateMONKLevel )
+		if( HightLevel >= gCreateMONKLevel || gObj[aIndex].RageFighter == 1 )
 		{
 			GenerableClass += 8;
 		}
@@ -1043,11 +1043,12 @@ void JGPGetCharList(BYTE *lpRecv)
 		{
 			GenerableClass += 2;
 		}
-		// ----
-		PMSG_UPD_SUMMONER_CREATE pMsg;
+
+		PMSG_UPD_ACCOUNTINFO_CREATE pMsg;
 		pMsg.h.set((LPBYTE)&pMsg, 0xDE, sizeof(pMsg));
 		pMsg.btResult = 0;
 		pMsg.IsSummonerEnable = GenerableClass;
+		pMsg.IsRageFighterEnable = GenerableClass;
 		// ----
 		DataSend(aIndex, (LPBYTE)&pMsg, sizeof(pMsg));
 #endif
@@ -2309,13 +2310,6 @@ void ItemSerialCreateSend(int aIndex, BYTE MapNumber, BYTE x, BYTE y, int type, 
 	pMsg.aIndex = aIndex;
 	pMsg.lootindex = LootIndex;
 	pMsg.SetOption = SetOption;
-
-#pragma message("##### REMOVE ME ######")
-	if( MapNumber == 236 )
-	{
-		pMsg.lDuration = LootIndex;
-	}
-
 
 	if ( OBJMAX_RANGE(aIndex) != FALSE  && gObj[aIndex].Type != OBJ_USER )
 	{
@@ -5645,7 +5639,7 @@ void DGChangeNameResult(LPSDHP_CHANGENAME_RESULT lpMsg)
 int N = 0;
 
 //Identical
-void DGSummonerStateUpdatedSend(LPPMSG_ANS_SUMMONER_CREATE lpMsg)
+void DGAccountInfoStateUpdatedSend(LPSDHP_ANS_ACCOUNTINFO lpMsg)
 {
 	char szId[MAX_ACCOUNT_LEN+1];
 
@@ -5662,46 +5656,27 @@ void DGSummonerStateUpdatedSend(LPPMSG_ANS_SUMMONER_CREATE lpMsg)
 		return;
 	}
 
-	gObj[aIndex].Summoner = 1;//lpMsg->IsSummonerEnable;
+	gObj[aIndex].Summoner = lpMsg->IsSummonerEnable;
+	gObj[aIndex].RageFighter = lpMsg->IsRageFighterEnable;
 
-	PMSG_UPD_SUMMONER_CREATE pMsg;
+	PMSG_UPD_ACCOUNTINFO_CREATE pMsg;
+
 	pMsg.h.set((LPBYTE)&pMsg, 0xDE, sizeof(pMsg));
 
 	pMsg.btResult = 0;
 
 	pMsg.IsSummonerEnable = lpMsg->IsSummonerEnable | 15;
-	
+	pMsg.IsRageFighterEnable = lpMsg->IsRageFighterEnable | 15;
+		
 #ifndef CHARCREATE_TEMP
 	DataSend(aIndex, (LPBYTE)&pMsg, sizeof(pMsg));
 #endif
 }
 
-typedef struct
-{
-	PBMSG_HEAD h;
-	char szAccountID[MAX_ACCOUNT_LEN+1];
-	short aIndex;
-}PMSG_REQ_SUMMONER_CREATE, *LPPMSG_REQ_SUMMONER_CREATE;
-
-//Identical (CashShop Buy)
-void GDSummonerStateUpdate(LPOBJ lpObj, int iIndex)
-{
-	PMSG_REQ_SUMMONER_CREATE pMsg;
-
-	pMsg.h.set((LPBYTE)&pMsg, 0xA2, sizeof(pMsg));
-
-	memset(pMsg.szAccountID, 0, sizeof(pMsg.szAccountID));
-	memcpy(pMsg.szAccountID, lpObj->AccountID, MAX_ACCOUNT_LEN);
-
-	pMsg.aIndex = lpObj->m_Index;
-
-	cDBSMng.Send((char*)&pMsg, sizeof(pMsg));
-}
-
 //Identical
-void DGSummonerStateRecv(LPPMSG_ANS_SUMMONER_STATUS lpMsg)
+void DGAccountInfoStateRecv(LPPMSG_ANS_ACCOUNTINFO_STATUS lpMsg)
 {
-	char szId[MAX_ACCOUNT_LEN];
+	char szId[MAX_ACCOUNT_LEN+1];
 
 	szId[MAX_ACCOUNT_LEN] = 0;
 
@@ -5716,16 +5691,22 @@ void DGSummonerStateRecv(LPPMSG_ANS_SUMMONER_STATUS lpMsg)
 		return;
 	}
 
-	if(lpMsg->btResult == 1)
+	if(lpMsg->btResultSummoner == 1)
 	{
 		gObj[aIndex].Summoner = 1;
 	}
 
-	PMSG_UPD_SUMMONER_CREATE pMsg;
+	if(lpMsg->btResultRageFighter == 1)
+	{
+		gObj[aIndex].Summoner = 1;
+	}
+
+	PMSG_UPD_ACCOUNTINFO_CREATE pMsg;
 	pMsg.h.set((LPBYTE)&pMsg, 0xDE, sizeof(pMsg));
 
 	pMsg.btResult = 1;
-	pMsg.IsSummonerEnable = lpMsg->btResult;
+	pMsg.IsSummonerEnable = lpMsg->btResultSummoner;
+	pMsg.IsRageFighterEnable = lpMsg->btResultRageFighter;
 
 	DataSend(aIndex, (LPBYTE)&pMsg, sizeof(pMsg));
 }
