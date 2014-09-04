@@ -1024,12 +1024,12 @@ void JGPGetCharList(BYTE *lpRecv)
 		}
 		// ----
 #ifdef CHARCREATE_TEMP
-		if( HightLevel >= gCreateSUMLevel || gObj[aIndex].Summoner == 1 )
+		if( (HightLevel >= gCreateSUMLevel && gCreateSUMLevel > 0) || gObj[aIndex].Summoner == 1 )
 		{
 			GenerableClass += 1;
 		}
 		// ----
-		if( HightLevel >= gCreateMONKLevel || gObj[aIndex].RageFighter == 1 )
+		if( (HightLevel >= gCreateMONKLevel && gCreateMONKLevel > 0) || gObj[aIndex].RageFighter == 1 )
 		{
 			GenerableClass += 8;
 		}
