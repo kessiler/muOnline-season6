@@ -1000,7 +1000,7 @@ int CGMMng::ManagementProc(LPOBJ lpObj, char* szCmd, int aIndex) //00570A00
                 lpObj->DbClass = 64;
                 break;
 			case 98:
-				lpObj->DbClass = 98;
+				lpObj->DbClass = 96;
 				break;
 			case 81:
 			case 83:

@@ -141,7 +141,7 @@ public:
     BYTE GetKillerState();
     int GetKillerHp();
     void SetKillerHp(int killer_hp);
-    void SetKillerState(BYTE state) { this->killer_state_ = state; }
+	void SetKillerState(BYTE state) { this->killer_state_ = state; }
 
     BYTE GetAngerKillerState();
     int GetAngerKillerHp();
@@ -270,8 +270,8 @@ private:
     int ice_worker_index_[kMaxIceWorker];
     int ukn364;
     int ukn368;
-    int ukn36c;
-    char ukn370;
+    int ice_walker_spawn_time; //int ukn36c;
+    char ice_walker_dead; //char ukn370;
     char killer_state_;
     int killer_hp_;
     int anger_killer_state_;
