@@ -47,7 +47,7 @@ BOOL CPetDBSet::LoadPetInfo(DWORD number, int& Level, int& Exp)
 
 	m_DBQuery.Clear();
 
-	if(Level < 0)
+	if(Level < 1)
 	{
 		Level = 1;
 	}
