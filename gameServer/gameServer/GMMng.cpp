@@ -999,6 +999,9 @@ int CGMMng::ManagementProc(LPOBJ lpObj, char* szCmd, int aIndex) //00570A00
 			case 66:
                 lpObj->DbClass = 64;
                 break;
+			case 98:
+				lpObj->DbClass = 98;
+				break;
 			case 81:
 			case 83:
                 lpObj->DbClass = 80;
