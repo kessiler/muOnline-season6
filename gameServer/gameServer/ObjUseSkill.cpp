@@ -821,6 +821,13 @@ void CObjUseSkill::UseSkill(int aIndex, CMagicInf * lpMagic, BYTE x, BYTE y, BYT
 					}
 				}
 				break;
+			 // --
+			case AT_SKILL_RAGEFIGHTER_DARKSIDE://1.01.06
+				{
+					this->SkillDarkSide( aIndex, aTargetIndex, lpMagic);
+				}
+				break;
+			// --
 			// --
 			case 264:	//-> AT_SKILL_DRAGON_ROAR
 				{
@@ -926,6 +933,49 @@ void CObjUseSkill::UseSkill(int aIndex, int aTargetIndex, CMagicInf * lpMagic) /
 			}
 		}
 	}
+}
+
+
+void CObjUseSkill::SkillDarkSide(int aIndex, int iTargetIndex, CMagicInf *lpMagic)
+{
+	int iTargetCount; // [sp+1Ch] [bp-10h]@1
+	WORD wTargetList[5]; // [sp+20h] [bp-Ch]@3
+
+	iTargetCount = 0;
+
+	for ( int i = 0; i < 5; ++i )
+	{
+		wTargetList[i] = OBJMAX-1;
+	}
+
+	if( gObj[aIndex].CloseCount >= 0 )
+	{
+		return;
+	}
+
+	if( !gObjUseSkill.SkillMonkDarkSideGetTargetIndex(aIndex, iTargetIndex, lpMagic, &wTargetList[0]) )
+	{
+		return;
+	}
+
+	PMSG_MONK_DARKSIDE_SEND pDarkSideTargetList;
+
+	memset(&pDarkSideTargetList, 0, sizeof(pDarkSideTargetList));
+	PHeadSetB((LPBYTE)&pDarkSideTargetList, 0x4B, sizeof(pDarkSideTargetList));
+	memcpy(pDarkSideTargetList.wTargetList, wTargetList, sizeof(wTargetList));
+	pDarkSideTargetList.MagicNumber = LOWORD(lpMagic->m_Skill);
+	gObj[aIndex].m_btDarkSideTargetNum = 0;
+
+	for ( int j = 0; j < 5; ++j )
+	{
+		if ( wTargetList[j] != OBJMAX )
+		{
+			++gObj[aIndex].m_btDarkSideTargetNum;
+			gObjAddAttackProcMsgSendDelay(&gObj[aIndex], 61,aIndex,150 * iTargetCount++ + 150,lpMagic->m_Skill,wTargetList[j]);
+		}
+	}
+	memcpy(gObj[aIndex].m_wDarkSideTargetList, wTargetList, sizeof(wTargetList));
+	DataSend(aIndex, (LPBYTE)&pDarkSideTargetList, pDarkSideTargetList.h.size);
 }
 
 BOOL CObjUseSkill::RunningSkill(int aIndex, int aTargetIndex, CMagicInf * lpMagic, BOOL bCombo) //

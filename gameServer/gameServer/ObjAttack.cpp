@@ -1519,32 +1519,30 @@ BOOL CObjAttack::Attack(LPOBJ lpObj, LPOBJ lpTargetObj, CMagicInf* lpMagic,  int
 					break;
 				case 260:
 				case 261:
-					AttackDamage = AttackDamage*(50 + (Vitality / 10)) / 100.0f;
+					AttackDamage = AttackDamage * (Vitality / 10 + 50) / 100.0f;
 					break;
 				case 262:
-					AttackDamage = (AttackDamage)*(50+(Vitality/10))/100.0f;
+					AttackDamage = (AttackDamage + Vitality / 10) * (Vitality / 10 + 50) / 100.0f;
 					break;
 				case 263:
-					AttackDamage = (AttackDamage)*(100 + (Dexterity/8) + (Energy/10))/100.0f;
+					AttackDamage = (Dexterity / 8 + AttackDamage + Energy / 10) * (Dexterity / 8 + Energy / 10 + 100) / 100.0f;
 					break;
 				case 264:
-					AttackDamage = (AttackDamage)*(50 + (Energy/10))/100.0f;
+					AttackDamage = (AttackDamage + Energy / 10) * (Energy / 10 + 50) / 100.0f;
 					break;
 				case 265:
 					if( lpTargetObj->Type == OBJ_USER )
 					{
-						AttackDamage = AttackDamage * (50 + (Energy/10)) / 100.0f;
+						AttackDamage = AttackDamage * (Energy / 10 + 50) / 100.0f;
 					}
 					else
 					{
-						AttackDamage = ((AttackDamage * (50 + (Energy/10)) / 100.0f) + 100.0f)*3.0f;
+						AttackDamage = (AttackDamage * (Energy / 10 + 50) / 100.0f + 100.0f) * 3.0f;
 					}
 					break;
 				case 269:
-					AttackDamage = AttackDamage*(50 + (Vitality / 10)) / 100.0f;
-					break;
 				case 270:
-					AttackDamage = AttackDamage*( 200 + (Vitality/10) ) / 100.0f;
+					AttackDamage = AttackDamage * (Vitality / 10 + 50) / 100.0f;
 					break;
 
 		/*		
@@ -1806,16 +1804,19 @@ BOOL CObjAttack::Attack(LPOBJ lpObj, LPOBJ lpTargetObj, CMagicInf* lpMagic,  int
 				case 554:
 				case 552:
 				case 555:
-					AttackDamage = AttackDamage*(50 + (Vitality / 10)) / 100.0f;
+					AttackDamage = AttackDamage * (Vitality / 10 + 50) / 100.0f;
 					break;
 				case 558:
+				case 562:
 					AttackDamage = (AttackDamage+(Vitality/10))*(50+(Vitality/10))/100.0f;
 					break;
 				case 559:
+				case 563:
 					AttackDamage = (AttackDamage+(Vitality/8)+(Energy/10))*(100 + (Vitality/8) + (Energy/10))/100.0f;
 					break;
 				case 560:
-					AttackDamage = (AttackDamage+(Energy/10))*(50 + (Energy/10))/100.0f;
+				case 561:
+					AttackDamage = (AttackDamage + Energy / 10) * (Energy / 10 + 50) / 100.0f;
 					break;
 				}
 			}

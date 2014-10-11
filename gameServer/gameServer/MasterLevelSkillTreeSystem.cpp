@@ -1294,25 +1294,7 @@ int CMasterLevelSkillTreeSystem::RunningSkill_MLS(LPOBJ lpObj,int aTargetIndex,C
 		this->MLS_SkillMonkBarrageJustOneTargetMastery(lpObj->m_Index,lpMagic,aTargetIndex);
 		break;
 	case 559:
-		{
-			PMSG_MONK_DARKSIDE_RECV pMsg = {0};
-			pMsg.TargetNumberH = SET_NUMBERH(aTargetIndex);
-			pMsg.TargetNumberL = SET_NUMBERL(aTargetIndex);
-
-			pMsg.MagicNumberH = SET_NUMBERH(lpMagic->m_Skill);
-			pMsg.MagicNumberL = SET_NUMBERL(lpMagic->m_Skill);
-
-			GCMonkDarkSideTargetSelect(&pMsg,lpObj->m_Index);
-
-			if( lpObj->m_btDarkSideTargetNum )
-			{
-				for(int i = 0; i < 5; i++)
-				{
-					if( lpObj->m_wDarkSideTargetList[i] != 10000 )
-						MLS_SkillMonkBarrageJustOneTarget(lpObj->m_Index,lpMagic,lpObj->m_wDarkSideTargetList[i]);
-				}
-			}
-		}
+		gObjUseSkill.SkillDarkSide( lpObj->m_Index, aTargetIndex, lpMagic);
 		break;
 	case 560:
 		{
