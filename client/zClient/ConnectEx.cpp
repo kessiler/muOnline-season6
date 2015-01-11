@@ -205,7 +205,7 @@ void ConnectEx::RestoreGame()
 
 void ConnectEx::DrawProgres()
 {
-	float StartX = (MAX_WIN_WIDTH / 2) - (160.0 / 2);
+	float StartX = (MAX_WIN_WIDTH / 2.0f) - (160.0f / 2.0f);
 	// ----
 	Counter++;
 	// ----
@@ -214,8 +214,8 @@ void ConnectEx::DrawProgres()
 		Counter = 0;
 	}
 	// ----
-	pDrawGUI(0x7A65, StartX, 100, 160.0, 18.0);
-	pDrawGUI(0x7A66, StartX + 5, 105, Counter, 8.0);
+	pDrawGUI(0x7A65, StartX, 100.0f, 160.0f, 18.0f);
+	pDrawGUI(0x7A66, StartX + 5.0f, 105.0f, Counter, 8.0f);
 	// ----
 	if( pOnLine == 0 )
 	{

@@ -28,8 +28,8 @@ extern "C" __declspec(dllexport)void Init()
 #ifdef VM_PROTECT
 	VMBEGIN
 #endif
-	// ----
-#ifdef __MUANGEL__
+
+#ifdef __MUTEX__
 	if( pMUIsLoaded == 1 )
 	{
 		CreateMutex(0, 1, "MuOnline");
@@ -40,9 +40,8 @@ extern "C" __declspec(dllexport)void Init()
 		}
 	}
 #endif
-	// ----
-#if defined  __MIX__ || __WHITE__ || __MUANGEL__
-#ifndef __ROOT__
+
+#ifdef __LAUNCHER__
 	char **	Command	= 0;
 	CommandLineToArg(GetCommandLine(), &Command);
 	if( strcmp("Updater", Command[1]) )
@@ -51,8 +50,7 @@ extern "C" __declspec(dllexport)void Init()
 		ExitProcess(0);
 	}
 #endif
-#endif
-	// ----
+
 #ifdef VM_PROTECT
 	if( VMProtectIsDebuggerPresent(TRUE) != 0 )
 	{
@@ -60,7 +58,7 @@ extern "C" __declspec(dllexport)void Init()
 		ExitProcess(0);
 	}
 #endif
-	// ----
+
 #ifdef __NOVUS__
 	gCraftSystem.Load();
 #endif
@@ -88,7 +86,7 @@ extern "C" __declspec(dllexport)void Init()
 	// ----
 	LoadLibrary("ttlci.dll");
 	// ----
-//	gSocketItem.Load();
+	//	gSocketItem.Load();
 #ifdef VM_PROTECT
 	VMEND
 #endif
@@ -104,14 +102,11 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
 
 		}
 		break;
-		// --
 	case DLL_PROCESS_ATTACH:
 		{
 			gController.Instance = hModule;
 		}
 		break;
 	}
-	// ----
 	return true;
 }
-// ----------------------------------------------------------------------------------------------

@@ -33,14 +33,11 @@ void ItemRank::Load()
 
 void ItemRank::Read(char * File)
 {
-	int Token;
-	// ----
 	if( !g_ScriptEncode.ReadScript(File) )
 	{
 		MessageBox(NULL, "file not found", "[ItemRank]", ERROR);
 		return;
 	}
-	// ----
 	while(true)
 	{
 		if( g_ScriptEncode.GetToken() == END )

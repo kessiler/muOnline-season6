@@ -1031,12 +1031,12 @@ void Interface::DrawResetWindow()
 	}
 	// ----
 	DWORD ItemNameColor		= eWhite;
-	float MainWidth			= 230.0;
-	float MainHeight		= 313.0;
-	float StartY			= 100.0;
-	float StartX			= (MAX_WIN_WIDTH / 2) - (MainWidth / 2);
-	float MainCenter		= StartX + (MainWidth / 3);
-	float ButtonX			= MainCenter - (29.0 / 2);
+	float MainWidth			= 230.0f;
+	float MainHeight		= 313.0f;
+	float StartY			= 100.0f;
+	float StartX			= (MAX_WIN_WIDTH / 2.0f) - (MainWidth / 2.0f);
+	float MainCenter		= StartX + (MainWidth / 3.0f);
+	float ButtonX			= MainCenter - (29.0f / 2.0f);
 	// ----
 	this->DrawGUI(eRESET_MAIN, StartX, StartY + 2);
 	this->DrawGUI(eRESET_TITLE, StartX, StartY);
@@ -1308,12 +1308,12 @@ void Interface::DrawNewsWindow()
 		return;
 	}
 	// ----
-	float MainWidth			= 230.0;
-	float MainHeight		= 313.0;
-	float StartY			= 100.0;
-	float StartX			= (MAX_WIN_WIDTH / 2) - (MainWidth / 2);
-	float MainCenter		= StartX + (MainWidth / 3);
-	float ButtonX			= MainCenter - (29.0 / 2);
+	float MainWidth			= 230.0f;
+	float MainHeight		= 313.0f;
+	float StartY			= 100.0f;
+	float StartX			= (MAX_WIN_WIDTH / 2.0f) - (MainWidth / 2.0f);
+	float MainCenter		= StartX + (MainWidth / 3.0f);
+	float ButtonX			= MainCenter - (29.0f / 2.0f);
 	// ----
 	this->DrawGUI(eNEWS_MAIN, StartX, StartY + 2);
 	this->DrawGUI(eNEWS_TITLE, StartX, StartY);
@@ -1479,12 +1479,12 @@ void Interface::DrawQuestDialog()
 		return;
 	}
 	// ----
-	float MainWidth			= 230.0;
-	float MainHeight		= 313.0;
-	float StartY			= 100.0;
-	float StartX			= (MAX_WIN_WIDTH / 2) - (MainWidth / 2);
-	float MainCenter		= StartX + (MainWidth / 3);
-	float ButtonX			= MainCenter - (29.0 / 2);
+	float MainWidth			= 230.0f;
+	float MainHeight		= 313.0f;
+	float StartY			= 100.0f;
+	float StartX			= (MAX_WIN_WIDTH / 2.0f) - (MainWidth / 2.0f);
+	float MainCenter		= StartX + (MainWidth / 3.0f);
+	float ButtonX			= MainCenter - (29.0f / 2.0f);
 	// ----
 	this->DrawGUI(eQUEST_MAIN, StartX, StartY + 2);
 	this->DrawGUI(eQUEST_TITLE, StartX, StartY);
@@ -1808,11 +1808,11 @@ float Interface::GetResizeX(short ObjectID)
 {
 	if( pWinWidth == 800 )
 	{
-		return this->Data[ObjectID].X + 16.0;
+		return this->Data[ObjectID].X + 16.0f;
 	}
 	else if( pWinWidth != 1024 )
 	{
-		return this->Data[ObjectID].X - 16.0;
+		return this->Data[ObjectID].X - 16.0f;
 	}
 	// ----
 	return this->Data[ObjectID].X;
