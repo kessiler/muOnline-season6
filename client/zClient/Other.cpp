@@ -8,9 +8,9 @@
 #include "Interface.h"
 #include "Camera.h"
 // ----------------------------------------------------------------------------------------------
-
 Other	gOther;
 DWORD	GuildAssistEx_Buff;
+DWORD	dwAllowTabSwitchLoginJMP;
 // ----------------------------------------------------------------------------------------------
 
 Naked(GuildAssistEx)
@@ -38,6 +38,42 @@ Naked(GuildAssistEx)
 	}
 }
 // ----------------------------------------------------------------------------------------------
+Naked(AllowTabSwitchLogin)
+{
+	_asm
+	{
+		MOV dwAllowTabSwitchLoginJMP, 0x0040B16F
+		PUSH 0
+		MOV EAX, DWORD PTR SS : [EBP - 0x38]
+		MOV ECX, DWORD PTR DS : [EAX + 0x350]
+		MOV EDX, DWORD PTR SS : [EBP - 0x38]
+		MOV EAX, DWORD PTR DS : [EDX + 0x350]
+		MOV EDX, DWORD PTR DS : [EAX]
+		CALL DWORD PTR DS : [EDX + 0x30]
+		// ----
+		MOV EAX, DWORD PTR SS : [EBP-0x38]
+		MOV ECX, DWORD PTR DS : [EAX+0x354]
+		PUSH ECX
+		MOV EDX, DWORD PTR SS : [EBP - 0x38]
+		MOV ECX, DWORD PTR DS : [EDX + 0x350]
+		MOV EAX, DWORD PTR SS : [EBP - 0x38]
+		MOV EDX, DWORD PTR DS : [EAX + 0x350]
+		MOV EAX, DWORD PTR DS : [EDX]
+		CALL DWORD PTR DS : [EAX + 0x58]
+		// ----
+		MOV ECX, DWORD PTR SS : [EBP - 0x38]
+		MOV EDX, DWORD PTR DS : [ECX + 0x350]
+		PUSH EDX
+		MOV EAX, DWORD PTR SS : [EBP - 0x38]
+		MOV ECX, DWORD PTR DS : [EAX + 0x354]
+		MOV EDX, DWORD PTR SS : [EBP - 0x38]
+		MOV EAX, DWORD PTR DS : [EDX + 0x354]
+		MOV EDX, DWORD PTR DS : [EAX]
+		CALL DWORD PTR DS : [EDX + 0x58]
+		// ----
+		JMP dwAllowTabSwitchLoginJMP
+	}
+}
 
 void Other::Load()
 {
@@ -51,9 +87,14 @@ void Other::Load()
 	SetOp((LPVOID)0x00830A56, (LPVOID)this->MoveListInit, ASM::CALL);
 	SetOp((LPVOID)0x00832D88, (LPVOID)this->MoveListInit, ASM::CALL);
 	// ----
+
+	SetRange((LPVOID)0x0040B154, 5, ASM::NOP);
+	SetOp((LPVOID)0x0040B154, AllowTabSwitchLogin, ASM::JMP);
+
 	this->Crack();
 	this->Changer();
 }
+
 // ----------------------------------------------------------------------------------------------
 
 void Other::Crack()
@@ -84,6 +125,9 @@ void Other::Changer()
 #ifdef VM_PROTECT
 	VMBEGIN
 #endif
+	//FIX CTRL FREEZY  | 0052101A  |.  6A 0D         PUSH 0D                                  ; |HookType = 13.
+	SetByte((PVOID)(0x0052101A+1), 0x02);
+
 	// ----
 #ifdef __ROOT__
 	SetByte((PVOID)0x0095CE90, 0xEB);
@@ -94,7 +138,7 @@ void Other::Changer()
 	// ----
 	if( !g_ScriptEncode.ReadScript("Data\\Custom\\Common.z") )
 	{
-		MessageBox(NULL, "file not found", "[Common]", ERROR);
+		MessageBoxA(NULL, "file not found", "[Common]", ERROR);
 		return;
 	}
 	// ----
