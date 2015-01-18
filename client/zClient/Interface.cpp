@@ -153,10 +153,10 @@ void Interface::Load()
 #ifdef __MAKELO__
 	this->BindObject(eOFFEXP_SWITCH, 32513, 57, 23, MAX_WIN_WIDTH-57, 0);
 #endif
-#ifdef __BEREZNUK__
+	// enable server time
 	this->BindObject(eTIME, 0x787E, 131, 70, -10, 359);
 	this->Data[eTIME].OnShow = true;
-#endif
+
 #ifdef __ROOT__
 	this->BindObject(eQUEST_MAIN, 0x7A5A, 222, 303, -1, -1);
 	this->BindObject(eQUEST_TITLE, 0x7A63, 230, 67, -1, -1);
@@ -196,9 +196,10 @@ void Interface::Work()
 #ifdef __MAKELO__
 	gInterface.DrawOffExpSwitch();
 #endif
-#ifdef __BEREZNUK__
+
+	// enable server time
 	gInterface.DrawTime();
-#endif
+
 	// ----
 	gInterface.DrawLifeBar();
 	gInterface.DrawCameraUI();
@@ -218,9 +219,7 @@ void Interface::LoadImages()
 	pLoadImage("Custom\\Interface\\CameraUI_Switch.tga", 0x787B, 0x2601, 0x2900, 1, 0);
 	pLoadImage("Custom\\Interface\\CameraUI_Reset.tga", 0x787C, 0x2601, 0x2900, 1, 0);
 	pLoadImage("Custom\\Interface\\NewsBoard_Title.tga", 0x787D, 0x2601, 0x2900, 1, 0);
-#ifdef __BEREZNUK__
 	pLoadImage("Custom\\Interface\\TimeBar.tga", 0x787E, 0x2601, 0x2900, 1, 0);
-#endif
 #ifdef __MAKELO__
 	pLoadImage("Interface\\newui_pcroom.tga", 32513, 0x2601, 0x2900, 1, 0);
 #endif

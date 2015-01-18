@@ -129,13 +129,12 @@ LRESULT Controller::Keyboard(int Code, WPARAM wParam, LPARAM lParam)
 			}
 			break;
 			// --
-#ifdef __BEREZNUK__
+
 		case VK_END:
 			{
 				gInterface.SwitchTime();
 			}
 			break;
-#endif
 		}
 	} 
 	return CallNextHookEx(gController.KeyboardHook, Code, wParam, lParam);
