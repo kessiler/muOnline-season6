@@ -1,8 +1,6 @@
 #include "StdAfx.h"
 #include "user.h"
 
-#ifdef __ALIEN__
-
 #define BALANCESYSTEM_DIR "Custom\\BalanceSystem.ini"
 
 class cBalanceSystem
@@ -12,9 +10,7 @@ public:
 	virtual ~cBalanceSystem();
 
 	void Load();
-	void Init();
 	void ReadConfigs(char * File);
-
 	void Main(LPOBJ lpObj, LPOBJ lpTarget, int & AttackDamage);
 
 private:
@@ -76,10 +72,5 @@ private:
 	int RFvsMG;
 	int RFvsDL;
 
-
-
-
 };
 extern cBalanceSystem gBalanceSystem;
-
-#endif

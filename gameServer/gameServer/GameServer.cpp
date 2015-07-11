@@ -65,6 +65,7 @@
 
 #ifdef __CUSTOMS__
 #include "ItemPrice.h"
+#include "BalanceSystem.h"
 #include "ResetSystem.h"
 #include "MixOption.h"
 #include "NewsBoard.h"
@@ -88,7 +89,6 @@
 #include "OfflineAttack.h"
 #endif
 #ifdef __ALIEN__
-#include "BalanceSystem.h"
 #include "ConMember.h"
 #include "ItemOption.h"
 #include "MonsterSpawner.h"
@@ -398,6 +398,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				g_OfflineTrade.Load();
 				g_PKClear.Load();
 				g_ClassCalc.Load();
+				gBalanceSystem.Load();
 #if defined __REEDLAN__ || __BEREZNUK__
 				g_ShopPointEx.Load();
 #endif
@@ -407,9 +408,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 #ifdef __MAKELO__
 				g_OfflineAttack.Load();
 #endif
-#if defined __ALIEN__ || __WHITE__
-				gBalanceSystem.Load();
-#endif
+
+				
 #ifdef __ALIEN__
 				gItemOption.Init();
 				//gMonsterSpawner.Load();

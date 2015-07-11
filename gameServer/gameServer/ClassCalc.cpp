@@ -3,39 +3,22 @@
 #include "logproc.h"
 #include "user.h"
 #include "GameMain.h"
-// -------------------------------------------------------------------------------
+
 
 ClassCalc g_ClassCalc;
-// -------------------------------------------------------------------------------
 
-ClassCalc::ClassCalc()
-{
-	this->Init();
-}
-// -------------------------------------------------------------------------------
-
-ClassCalc::~ClassCalc()
-{
-
-}
-// -------------------------------------------------------------------------------
-
-void ClassCalc::Init()
-{
-
-}
-// -------------------------------------------------------------------------------
+ClassCalc::ClassCalc() {}
+ClassCalc::~ClassCalc() {}
 
 void ClassCalc::Load()
 {
 	this->ReadData(gDirPath.GetNewPath("Custom\\ClassCalc.ini"));
 }
-// -------------------------------------------------------------------------------
 
 void ClassCalc::ReadData(char * File)
 { 
 	char * ClassType[] = { "CLASS_WIZARD", "CLASS_KNIGHT", "CLASS_ELF", 
-	"CLASS_MAGUMSA", "CLASS_DARKLORD", "CLASS_SUMMONER", "CLASS_MONK" };
+		"CLASS_MAGUMSA", "CLASS_DARKLORD", "CLASS_SUMMONER", "CLASS_MONK" };
 	char szFloat[256];
 	// ----
 	for( int Class = CLASS_WIZARD; Class < MAX_TYPE_PLAYER; Class++ )
@@ -115,4 +98,3 @@ void ClassCalc::ReadData(char * File)
 		}
 	}
 }
-// -------------------------------------------------------------------------------

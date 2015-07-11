@@ -104,6 +104,7 @@
 #ifdef __CUSTOMS__
 #include "ItemPrice.h"
 #include "ResetSystem.h"
+#include "BalanceSystem.h"
 #include "MixOption.h"
 #include "NewsBoard.h"
 #include "PVPZone.h"
@@ -127,7 +128,6 @@
 #endif
 
 #ifdef __ALIEN__
-#include "BalanceSystem.h"
 #include "ItemOption.h"
 #include "MonsterSpawner.h"
 #endif
@@ -1995,6 +1995,7 @@ void ReadCommonServerInfo()
 	g_PKClear.Load();
 	g_ClassCalc.Load();
 	DropEvent.LoadConfigs();
+	gBalanceSystem.Load();
 #ifdef QUESTSYSTEM
 	g_QuestSystem.Load();
 #endif
@@ -2009,9 +2010,6 @@ void ReadCommonServerInfo()
 	g_OfflineAttack.Load();
 #endif
 
-#if defined __ALIEN__ || __WHITE__
-	gBalanceSystem.Load();
-#endif
 
 #ifdef __ALIEN__
 	gItemOption.Init();
