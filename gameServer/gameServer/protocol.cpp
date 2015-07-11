@@ -3673,9 +3673,6 @@ BOOL CGItemDropRequest(PMSG_ITEMTHROW * lpMsg, int aIndex, BOOL drop_type)
 	}
 
 	if( g_LuckyItemManager.IsLuckyItemEquipment(lpObj->pInventory[lpMsg->Ipos].m_Type) 
-#ifdef __CUSTOMS__
-		&& g_License.GetLicenseID() != Customer::Legend
-#endif
 		|| g_LuckyItemManager.IsLuckyItemTicket(lpObj->pInventory[lpMsg->Ipos].m_Type) )
 	{
 		pResult.Result = false;
@@ -5543,9 +5540,6 @@ void CGSellRequestRecv(PMSG_SELLREQUEST * lpMsg, int aIndex)
 
 	if( g_LuckyItemManager.IsLuckyItemTicket(lpObj->pInventory[lpMsg->Pos].m_Type) 
 		|| g_LuckyItemManager.IsLuckyItemEquipment(lpObj->pInventory[lpMsg->Pos].m_Type)
-#ifdef __CUSTOMS__
-		&& g_License.GetLicenseID() != Customer::Legend
-#endif
 		|| lpObj->pInventory[lpMsg->Pos].m_Type == ITEMGET(14, 160) || lpObj->pInventory[lpMsg->Pos].m_Type == ITEMGET(14, 161) )
 	{
 		DataSend(aIndex, (LPBYTE)&pResult, pResult.h.size);

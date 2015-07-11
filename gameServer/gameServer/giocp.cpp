@@ -7,7 +7,6 @@
 #include "GameMain.h"
 #include "GameServer.h"
 #include "user.h"
-#include "License.h"
 #include "CheatGuard.h"
 #include "ConnectEx.h"
 #include "OfflineTrade.h"

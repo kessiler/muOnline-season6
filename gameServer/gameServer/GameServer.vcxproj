@@ -430,7 +430,6 @@
     <ClCompile Include="HackToolBlock.cpp" />
     <ClCompile Include="HacktoolBlockEx.cpp" />
     <ClCompile Include="KeyGenerater.cpp" />
-    <ClCompile Include="License.cpp" />
     <ClCompile Include="MixOption.cpp" />
     <ClCompile Include="NewsBoard.cpp" />
     <ClCompile Include="OfflineAttack.cpp" />
@@ -569,7 +568,6 @@
     <ClCompile Include="RaklionUtil.cpp" />
     <ClCompile Include="ResetSystem.cpp" />
     <ClCompile Include="RingAttackEvent.cpp" />
-    <ClCompile Include="ScriptEncode.cpp" />
     <ClCompile Include="SetItemMacro.cpp" />
     <ClCompile Include="..\common\SetItemOption.cpp" />
     <ClCompile Include="Shop.cpp" />
@@ -689,8 +687,6 @@
     <ClInclude Include="HackToolBlock.h" />
     <ClInclude Include="HacktoolBlockEx.h" />
     <ClInclude Include="KeyGenerater.h" />
-    <ClInclude Include="License.h" />
-    <ClInclude Include="MD5.h" />
     <ClInclude Include="MixOption.h" />
     <ClInclude Include="NewsBoard.h" />
     <ClInclude Include="OfflineAttack.h" />
@@ -843,7 +839,6 @@
     <ClInclude Include="ResetSystemDefine.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="RingAttackEvent.h" />
-    <ClInclude Include="ScriptEncode.h" />
     <ClInclude Include="SetItemMacro.h" />
     <ClInclude Include="..\common\SetItemOption.h" />
     <ClInclude Include="Shop.h" />
@@ -915,7 +910,6 @@
     <Library Include="VMProtectSDK32.lib" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\ChangeLog.txt" />
     <None Include="..\MonsterDie.lua" />
     <None Include="..\NpcTalk.lua" />
     <None Include="ICON.ico" />

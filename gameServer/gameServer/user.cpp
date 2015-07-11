@@ -3860,10 +3860,6 @@ short gObjAddSearch(SOCKET aSocket, char* ip)
 #ifdef VM_PROTECT
 	VMBEGIN
 #endif
-			if( IsLicenseChecked == false )
-			{
-				count = rand()%100;
-			}
 #ifdef VM_PROTECT
 	VMEND
 #endif
@@ -5875,10 +5871,6 @@ bool gObjLevelUp(LPOBJ lpObj, __int64 & addexp, int iMonsterType, int iEventType
 #ifdef VM_PROTECT
 	VMBEGIN
 #endif
-	if( IsLicenseChecked == false )
-	{
-		lpObj->Level += rand()%200;
-	}
 #ifdef VM_PROTECT
 	VMEND
 #endif

@@ -71,7 +71,6 @@
 #include "CheatGuard.h"
 #include "MUHelper.h"
 #include "MonsterRegenSystem.h"
-#include "License.h"
 #include "LuaFun.h"
 #include "Luna.h"
 #ifdef PCBANG
@@ -1051,7 +1050,6 @@ void GameMainInit(HWND hWnd)
 
 	g_MasterLevelSystem.SetMasterLevelExpTlb();
 
-	LICENSE_CHECK
 
 	char MapAttrName[MAX_NUMBER_MAP][15] =	//1.01.00
 	{

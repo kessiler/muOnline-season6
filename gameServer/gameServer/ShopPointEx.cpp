@@ -52,14 +52,6 @@ void ShopPointEx::Init()
 void ShopPointEx::Load()
 {
 	this->Init();
-	// ----
-	if(		g_License.GetLicenseID() != Customer::Reedlan 
-		&&	g_License.GetLicenseID() != Customer::Refinery
-		&&	g_License.GetLicenseID() != Customer::Bereznuk )
-	{
-		return;
-	}
-	// ----
 	this->ReadData(gDirPath.GetNewPath("Custom\\ShopPointEx.txt"));
 }
 // -------------------------------------------------------------------------------

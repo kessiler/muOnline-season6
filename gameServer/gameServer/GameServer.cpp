@@ -132,7 +132,6 @@ ATOM MyRegisterClass(HINSTANCE);
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 LRESULT CALLBACK About(HWND hInst, UINT message, WPARAM wParam, LPARAM lParam);
 
-#include "License.h"
 
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {

@@ -373,12 +373,6 @@
     <Filter Include="Source Files\Character\Quest\Exp">
       <UniqueIdentifier>{48c929b3-0d89-4d60-b1c1-2713ec078943}</UniqueIdentifier>
     </Filter>
-    <Filter Include="License">
-      <UniqueIdentifier>{35195af2-068f-45bf-b896-1af8986d8684}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="License\Tool">
-      <UniqueIdentifier>{b3c5ca6c-a7db-4dae-86f1-da3306a037f7}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AcceptIp.cpp">
@@ -920,12 +914,6 @@
     </ClCompile>
     <ClCompile Include="MixOption.cpp">
       <Filter>Custom\MixOption</Filter>
-    </ClCompile>
-    <ClCompile Include="License.cpp">
-      <Filter>License</Filter>
-    </ClCompile>
-    <ClCompile Include="ScriptEncode.cpp">
-      <Filter>License\Tool</Filter>
     </ClCompile>
     <ClCompile Include="NewsBoard.cpp">
       <Filter>Custom\NewsBoard</Filter>
@@ -1688,15 +1676,6 @@
     <ClInclude Include="MixOption.h">
       <Filter>Custom\MixOption</Filter>
     </ClInclude>
-    <ClInclude Include="License.h">
-      <Filter>License</Filter>
-    </ClInclude>
-    <ClInclude Include="MD5.h">
-      <Filter>License\Tool</Filter>
-    </ClInclude>
-    <ClInclude Include="ScriptEncode.h">
-      <Filter>License\Tool</Filter>
-    </ClInclude>
     <ClInclude Include="NewsBoard.h">
       <Filter>Custom\NewsBoard</Filter>
     </ClInclude>
@@ -1897,7 +1876,6 @@
     <None Include="ICON.ico">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\ChangeLog.txt" />
     <None Include="..\NpcTalk.lua">
       <Filter>Extern\Lua\MU\Additional\Scripts</Filter>
     </None>

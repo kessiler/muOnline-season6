@@ -8,7 +8,6 @@
 #include "DBSockMng.h"
 #include "DSProtocol.h"
 #include "SProtocol.h"
-#include "License.h"
 // -------------------------------------------------------------------------------
 
 #if defined __BEREZNUK__ || __MIX__ || __REEDLAN__ || __MUANGEL__ || __WHITE__ || __MEGAMU__ || __VIRNET__

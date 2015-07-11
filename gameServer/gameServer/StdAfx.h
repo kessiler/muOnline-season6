@@ -79,7 +79,6 @@
 #ifdef VM_PROTECT
 #include "VMProtectSDK.h"
 #endif
-#include "License.h"
 // ------------------------------------------------------------------------------
 
 #define OPTIMIZATION
