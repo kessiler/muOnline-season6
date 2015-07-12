@@ -12,25 +12,13 @@ CheatGuard gCheatGuard;
 
 void CheatGuard::Load()
 {
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
-	// ----
 	ZeroMemory(this->XOR, sizeof(XOR));
 	this->ChangeXORFilter();
-	// ----
-#ifdef VM_PROTECT
-	VMEND
-#endif
 }
 // ----------------------------------------------------------------------------------------------
 
 void CheatGuard::ChangeXORFilter()
 {
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
-	// ----
 	this->XOR[0]	= 0xf2;
 	this->XOR[1]	= 0xa5;
 	this->XOR[2]	= 0xb4;
@@ -68,10 +56,6 @@ void CheatGuard::ChangeXORFilter()
 	{
 		SetByte((PVOID)((oXORFilterStart + 4 * i) + 3), this->XOR[i]);
 	}
-	// ----
-#ifdef VM_PROTECT
-	VMEND
-#endif
 }
 // ----------------------------------------------------------------------------------------------
 
@@ -114,10 +98,6 @@ int CheatGuard::GetLargerFrame()
 
 void CheatGuard::Check(CHEATGUARD_REQ_CHECK * pRequest)
 {
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
-	// ----
 	gObjUser.Refresh();
 	// ----
 	CHEATGUARD_ANS_CHECK pResult;
@@ -200,9 +180,5 @@ void CheatGuard::Check(CHEATGUARD_REQ_CHECK * pRequest)
 			return;
 		}
 	}
-	// ----
-#ifdef VM_PROTECT
-	VMEND
-#endif
 }
 // ----------------------------------------------------------------------------------------------

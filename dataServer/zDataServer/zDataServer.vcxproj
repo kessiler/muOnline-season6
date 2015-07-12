@@ -123,7 +123,6 @@
     <ClInclude Include="Sprodef.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="VMProtectSDK.h" />
     <ClInclude Include="WarehouseDBSet.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="winutil.h" />
@@ -187,9 +186,6 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="zDataServer.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="VMProtectSDK32.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -52,12 +52,6 @@
     <Filter Include="Source Files\Object\Monster">
       <UniqueIdentifier>{9c7d85de-84ce-4f4c-b681-b2d8f26366b8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Extern">
-      <UniqueIdentifier>{426b5741-7b5a-49c0-8334-205fab715768}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Extern\VMProtect">
-      <UniqueIdentifier>{f7db903d-dc33-481a-ae0a-2356669ec822}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Interface\ChatExpanded">
       <UniqueIdentifier>{a86a428c-6879-4c83-80fb-09fd08cb1704}</UniqueIdentifier>
     </Filter>
@@ -155,9 +149,6 @@
     </ClInclude>
     <ClInclude Include="ItemPrice.h">
       <Filter>Source Files\ItemPrice</Filter>
-    </ClInclude>
-    <ClInclude Include="VMProtectSDK.h">
-      <Filter>Extern\VMProtect</Filter>
     </ClInclude>
     <ClInclude Include="ChatExpanded.h">
       <Filter>Source Files\Interface\ChatExpanded</Filter>
@@ -278,11 +269,6 @@
     <ClCompile Include="ItemModel.cpp">
       <Filter>Source Files\ItemModel</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="VMProtectSDK32.lib">
-      <Filter>Extern\VMProtect</Filter>
-    </Library>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">

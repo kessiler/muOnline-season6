@@ -115,7 +115,6 @@
     <ClInclude Include="TrayMode.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="VisualFix.h" />
-    <ClInclude Include="VMProtectSDK.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
@@ -155,9 +154,6 @@
     <ClCompile Include="TrayMode.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="VisualFix.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="VMProtectSDK32.lib" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />

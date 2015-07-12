@@ -391,9 +391,11 @@
     <ClCompile Include="AcceptIp.cpp" />
     <ClCompile Include="AntiHack.cpp" />
     <ClCompile Include="BalanceSystem.cpp" />
+    <ClCompile Include="BuffCalc.cpp" />
     <ClCompile Include="ChatFilter.cpp" />
     <ClCompile Include="ClassCalc.cpp" />
     <ClCompile Include="ConnectEx.cpp" />
+    <ClCompile Include="CrywolfObjInfo.cpp" />
     <ClCompile Include="DropEvent.cpp" />
     <ClCompile Include="DropEx.cpp" />
     <ClCompile Include="ExUtilits.cpp" />
@@ -401,9 +403,11 @@
     <ClCompile Include="ItemRank.cpp" />
     <ClCompile Include="JewelsEx.cpp" />
     <ClCompile Include="MonsterSpawner.cpp" />
+    <ClCompile Include="NewCashShop.cpp" />
     <ClCompile Include="OffExp.cpp" />
     <ClCompile Include="OfflineTrade.cpp" />
     <ClCompile Include="PKClear.cpp" />
+    <ClCompile Include="PremiumSystem.cpp" />
     <ClCompile Include="PVPZone.cpp" />
     <ClCompile Include="AttackEvent.cpp" />
     <ClCompile Include="BattleGround.cpp" />
@@ -564,6 +568,7 @@
     <ClCompile Include="Raklion.cpp" />
     <ClCompile Include="RaklionBattleOfSelupan.cpp" />
     <ClCompile Include="RaklionBattleUserMng.cpp" />
+    <ClCompile Include="RaklionObjInfo.cpp" />
     <ClCompile Include="RaklionSelupan.cpp" />
     <ClCompile Include="RaklionUtil.cpp" />
     <ClCompile Include="ResetSystem.cpp" />
@@ -648,19 +653,25 @@
     <ClInclude Include="AcceptIp.h" />
     <ClInclude Include="AntiHack.h" />
     <ClInclude Include="BalanceSystem.h" />
+    <ClInclude Include="BuffCalc.h" />
     <ClInclude Include="ChatFilter.h" />
     <ClInclude Include="ClassCalc.h" />
     <ClInclude Include="ConnectEx.h" />
+    <ClInclude Include="DbgHelp.h" />
     <ClInclude Include="DropEvent.h" />
     <ClInclude Include="DropEx.h" />
     <ClInclude Include="ExUtilits.h" />
+    <ClInclude Include="ItemDef.h" />
     <ClInclude Include="ItemOption.h" />
     <ClInclude Include="ItemRank.h" />
     <ClInclude Include="JewelsEx.h" />
+    <ClInclude Include="luna.h" />
     <ClInclude Include="MonsterSpawner.h" />
+    <ClInclude Include="NewCashShop.h" />
     <ClInclude Include="OffExp.h" />
     <ClInclude Include="OfflineTrade.h" />
     <ClInclude Include="PKClear.h" />
+    <ClInclude Include="PremiumSystem.h" />
     <ClInclude Include="PVPZone.h" />
     <ClInclude Include="AttackEvent.h" />
     <ClInclude Include="BattleGround.h" />
@@ -832,6 +843,7 @@
     <ClInclude Include="Raklion.h" />
     <ClInclude Include="RaklionBattleOfSelupan.h" />
     <ClInclude Include="RaklionBattleUserMng.h" />
+    <ClInclude Include="RaklionObjInfo.h" />
     <ClInclude Include="RaklionSelupan.h" />
     <ClInclude Include="RaklionUtil.h" />
     <ClInclude Include="..\include\Readscript.h" />
@@ -881,7 +893,6 @@
     <ClInclude Include="TvTEvent.h" />
     <ClInclude Include="user.h" />
     <ClInclude Include="ViewportGuild.h" />
-    <ClInclude Include="VMProtectSDK.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="WhisperCash.h" />
     <ClInclude Include="..\common\winutil.h" />
@@ -906,12 +917,10 @@
     <CustomBuild Include="GameServer.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Library Include="DbgHelp.Lib" />
     <Library Include="SimpleModulus.lib" />
-    <Library Include="VMProtectSDK32.lib" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MonsterDie.lua" />
-    <None Include="..\NpcTalk.lua" />
     <None Include="ICON.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

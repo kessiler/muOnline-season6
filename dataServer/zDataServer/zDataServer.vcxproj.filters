@@ -46,9 +46,6 @@
     <Filter Include="Source Files\License">
       <UniqueIdentifier>{319f9600-9f1e-459d-9879-af8713971550}</UniqueIdentifier>
     </Filter>
-    <Filter Include="VMProtect">
-      <UniqueIdentifier>{b09e0a0b-96c2-4daa-888a-70f0c6e6695f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="small.ico">
@@ -200,9 +197,6 @@
     <ClInclude Include="ScriptEncode.h">
       <Filter>Source Files\License</Filter>
     </ClInclude>
-    <ClInclude Include="VMProtectSDK.h">
-      <Filter>VMProtect</Filter>
-    </ClInclude>
     <ClInclude Include="PeriodItemExDBSet.h">
       <Filter>Source Files\DataBase\DBSet</Filter>
     </ClInclude>
@@ -351,10 +345,5 @@
     <ResourceCompile Include="zDataServer.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="VMProtectSDK32.lib">
-      <Filter>VMProtect</Filter>
-    </Library>
   </ItemGroup>
 </Project>

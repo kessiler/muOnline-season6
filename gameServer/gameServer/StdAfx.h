@@ -12,8 +12,6 @@
 #define _WIN32_WINNT			0x500
 // -------------------------------------------------------------------------------
 
-//#define LICENSE
-//#define VMPROTECT
 // ------------------------------------------------------------------------------
 
 #define __CUSTOMS__		1
@@ -76,9 +74,6 @@
 #include <afx.h>
 #include "MuMsg.h"
 #include "WzAG.h"
-#ifdef VM_PROTECT
-#include "VMProtectSDK.h"
-#endif
 // ------------------------------------------------------------------------------
 
 #define OPTIMIZATION

@@ -41,11 +41,9 @@ public:
 
 		this->m_iObjIndex[this->m_iObjCount] = iIndex;
 		this->m_iObjCount++;
-		
+
 		return TRUE;
 	}
-
-public:
 
 	int m_iObjCount;	// 0
 	int m_iObjIndex[MAX_CRYWOLF_OBJ_INFO];	// 4

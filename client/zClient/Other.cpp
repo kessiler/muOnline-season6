@@ -122,9 +122,6 @@ void Other::Crack()
 
 void Other::Changer()
 {
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
 	//FIX CTRL FREEZY  | 0052101A  |.  6A 0D         PUSH 0D                                  ; |HookType = 13.
 	SetByte((PVOID)(0x0052101A+1), 0x02);
 
@@ -175,10 +172,6 @@ void Other::Changer()
 	SetDword((PVOID)(0x0096A9DB+1), (DWORD)LogName2);
 	SetDword((PVOID)(0x004D1D0B+1), (DWORD)DumpName);
 	SetDword((PVOID)(0x004D9F54+1), (DWORD)ScreenName);
-	// ----
-#ifdef VM_PROTECT
-	VMEND
-#endif
 }
 // ----------------------------------------------------------------------------------------------
 

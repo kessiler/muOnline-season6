@@ -25,9 +25,6 @@
     <Filter Include="Extern\MuMsg">
       <UniqueIdentifier>{f07d6676-62db-47ec-847f-c6a8dd9663a5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Extern\VMProtect">
-      <UniqueIdentifier>{eea1dfc5-3d31-4b17-ac53-5975a16651de}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Extern\WzAG">
       <UniqueIdentifier>{7ab08a8c-eba8-483e-b7d5-df4c7d7b8aa1}</UniqueIdentifier>
     </Filter>
@@ -1077,6 +1074,21 @@
     <ClCompile Include="MagicDamage.cpp">
       <Filter>Source Files\Attack</Filter>
     </ClCompile>
+    <ClCompile Include="RaklionObjInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCashShop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CrywolfObjInfo.cpp">
+      <Filter>Source Files\Event\Crywolf</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AcceptIp.h">
@@ -1156,9 +1168,6 @@
     </ClInclude>
     <ClInclude Include="MuMsg.h">
       <Filter>Extern\MuMsg</Filter>
-    </ClInclude>
-    <ClInclude Include="VMProtectSDK.h">
-      <Filter>Extern\VMProtect</Filter>
     </ClInclude>
     <ClInclude Include="WzAG.h">
       <Filter>Extern\WzAG</Filter>
@@ -1853,13 +1862,34 @@
     <ClInclude Include="MagicInf.h">
       <Filter>Source Files\Attack</Filter>
     </ClInclude>
+    <ClInclude Include="RaklionObjInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCashShop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="luna.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgHelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffCalc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="SimpleModulus.lib">
       <Filter>Extern\Libs</Filter>
     </Library>
-    <Library Include="VMProtectSDK32.lib">
-      <Filter>Extern\VMProtect</Filter>
+    <Library Include="DbgHelp.Lib">
+      <Filter>Extern\Libs</Filter>
     </Library>
   </ItemGroup>
   <ItemGroup>
@@ -1875,12 +1905,6 @@
   <ItemGroup>
     <None Include="ICON.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="..\NpcTalk.lua">
-      <Filter>Extern\Lua\MU\Additional\Scripts</Filter>
-    </None>
-    <None Include="..\MonsterDie.lua">
-      <Filter>Extern\Lua\MU\Additional\Scripts</Filter>
     </None>
   </ItemGroup>
 </Project>

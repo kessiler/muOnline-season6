@@ -50,10 +50,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 void Init()
 {
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
-		bool Return;
+	bool Return;
 	char szText[256];
 	// ----
 	DCInfo.SetMabubBanjiOption(true);
@@ -214,7 +211,4 @@ void Init()
 	//-> Maybe for send invite to GS?
 	wsjServer.MyWinsockBase::CreateSocket();
 	wsjServer.CreateServer(NULL, gSettings.ServerPort+1, 2026, 0);
-#ifdef VM_PROTECT
-	VMEND
-#endif
 }

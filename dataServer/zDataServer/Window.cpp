@@ -1,12 +1,7 @@
 #include "stdafx.h"
 #include "ServerPrc.h"
-#ifdef VMPROTECT
-	#include "VMProtectSDK.h"
-#endif
-// -----------------------------------------------------------------------
 
 Window	gWindow;
-// -----------------------------------------------------------------------
 
 BOOL CALLBACK Dialog_Main(HWND Window, UINT Message, WPARAM WParam, LPARAM LParam)
 {
@@ -14,39 +9,18 @@ BOOL CALLBACK Dialog_Main(HWND Window, UINT Message, WPARAM WParam, LPARAM LPara
 	{
 	case WM_INITDIALOG:
 		{
-#ifdef VMPROTECT
-			VMProtectBeginUltra("protect_init");
-			// ----
-			if ( VMProtectIsDebuggerPresent(TRUE) != 0 )
-			{
-				MessageBox(0, "Protect system found debugger, process will be closed", "zProtect System", ERROR);
-				ExitProcess(0);
-			}
-#endif
-			// ----
 			gWindow.WindowID		= Window;
-			// ----
 			gWindow.SetTitle(Window, "zDataServer [%s] :: Main", APP_VERSION_T);
-			// ----
 			gWindow.PrintLine(1);
 			gWindow.PrintText("\t\t\t\tWelcome to %s [%s]", APP_NAME, APP_VERSION_T);
 			gWindow.PrintLine(1);	
-			// ----
+
 			gSettings.ReadData(".\\Settings.ini");
-			// ----
-#ifdef LICENSE
-			gLicense.Check();
-#endif
-			// ----
+
 			Init();
 			SetTimer(Window, WM_UPDATER, 60000, NULL);
-			// ----
-#ifdef VMPROTECT
-			VMProtectEnd();
-#endif
 		}
 		break;
-		// --
 	case WM_COMMAND:
 		{
 			switch(WParam)

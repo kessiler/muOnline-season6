@@ -1,8 +1,6 @@
 #pragma once
 // -----------------------------------------------------------------------
 
-//#define VMPROTECT
-// -----------------------------------------------------------------------
 
 //#define __MUANGEL__		1
 #define __ALIEN__		2	
@@ -45,11 +43,7 @@ processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 // -----------------------------------------------------------------------
 
 #pragma comment(lib, "ws2_32.lib")
-// -----------------------------------------------------------------------
 
-#ifdef VMPROTECT
-	#include "VMProtectSDK.h"
-#endif
 #include "define.h"
 #include "Settings.h"
 #include "zDataServer.h"

@@ -25,9 +25,6 @@
 
 extern "C" __declspec(dllexport)void Init()
 {
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
 
 #ifdef __MUTEX__
 	if( pMUIsLoaded == 1 )
@@ -47,14 +44,6 @@ extern "C" __declspec(dllexport)void Init()
 	if( strcmp("Updater", Command[1]) )
 	{
 		MessageBox(0, "Please start game from Launcher", "Start Error", ERROR);
-		ExitProcess(0);
-	}
-#endif
-
-#ifdef VM_PROTECT
-	if( VMProtectIsDebuggerPresent(TRUE) != 0 )
-	{
-		MessageBox(0, "Protect system found debugger, process will be closed", "zCheatGuard", ERROR);
 		ExitProcess(0);
 	}
 #endif
@@ -87,9 +76,6 @@ extern "C" __declspec(dllexport)void Init()
 	LoadLibrary("ttlci.dll");
 	// ----
 	//	gSocketItem.Load();
-#ifdef VM_PROTECT
-	VMEND
-#endif
 }
 // ----------------------------------------------------------------------------------------------
 

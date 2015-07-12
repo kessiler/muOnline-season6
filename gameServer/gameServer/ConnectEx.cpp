@@ -30,19 +30,6 @@ BOOL PacketCheckTime2(LPOBJ lpObj)
 
 void ConnectEx::SendLogin(int UserIndex, CONNECTEX_LOGIN * Data)
 {
-	if(		g_License.GetLicenseID() != Customer::Zeon
-		&&	g_License.GetLicenseID() != Customer::Refinery
-		&&	g_License.GetLicenseID() != Customer::Bereznuk
-		&&	g_License.GetLicenseID() != Customer::Reedlan
-		&&	g_License.GetLicenseID() != Customer::MUAngel
-		&&	g_License.GetLicenseID() != Customer::MUAngel2 
-		&&	g_License.GetLicenseID() != Customer::White
-		&&	g_License.GetLicenseID() != Customer::White2 
-		&&  g_License.GetLicenseID() != Customer::drynea 
-		&&  g_License.GetLicenseID() != Customer::virnet )
-	{
-		return;
-	}
 	// ----
 	BuxConvert(Data->AccountID, MAX_ACCOUNT_LEN);
 	BuxConvert(Data->Password, MAX_ACCOUNT_LEN);
@@ -124,19 +111,6 @@ void ConnectEx::SendLogin(int UserIndex, CONNECTEX_LOGIN * Data)
 
 void ConnectEx::SendGame(int UserIndex)
 {
-	if(		g_License.GetLicenseID() != Customer::Zeon
-		&&	g_License.GetLicenseID() != Customer::Refinery
-		&&	g_License.GetLicenseID() != Customer::Bereznuk
-		&&	g_License.GetLicenseID() != Customer::Reedlan
-		&&	g_License.GetLicenseID() != Customer::MUAngel
-		&&	g_License.GetLicenseID() != Customer::MUAngel2
-		&&	g_License.GetLicenseID() != Customer::White
-		&&	g_License.GetLicenseID() != Customer::White2 
-		&&  g_License.GetLicenseID() != Customer::drynea 
-		&&  g_License.GetLicenseID() != Customer::virnet )
-	{
-		return;
-	}
 	// ----
 	gObj[UserIndex].m_ConnectEx = false;
 	DataServerGetCharListRequest(UserIndex);
@@ -175,19 +149,6 @@ void ConnectEx::SendGame(int UserIndex)
 
 void ConnectEx::SendClose(int UserIndex)
 {
-	if(		g_License.GetLicenseID() != Customer::Zeon
-		&&	g_License.GetLicenseID() != Customer::Refinery
-		&&	g_License.GetLicenseID() != Customer::Bereznuk
-		&&	g_License.GetLicenseID() != Customer::Reedlan
-		&&	g_License.GetLicenseID() != Customer::MUAngel
-		&&	g_License.GetLicenseID() != Customer::MUAngel2
-		&&	g_License.GetLicenseID() != Customer::White
-		&&	g_License.GetLicenseID() != Customer::White2 
-		&&  g_License.GetLicenseID() != Customer::drynea
-		&&  g_License.GetLicenseID() != Customer::virnet )
-	{
-		return;
-	}
 	// ----
 	CONNECTEX_CLOSE pRequest;
 	pRequest.h.set((LPBYTE)&pRequest, 0xFB, 0xC, sizeof(CONNECTEX_CLOSE));

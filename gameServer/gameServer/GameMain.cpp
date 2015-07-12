@@ -925,9 +925,6 @@ BOOL gJoominCheck(char* szJN, int iLimitAge)
 
 void GameMainInit(HWND hWnd)
 {
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
 	// ----
 	int n;
 	int DataBufferSize;
@@ -1173,9 +1170,6 @@ void GameMainInit(HWND hWnd)
     g_MuLuaQuestExp.DoFile("..\\Data\\Lua\\Quest_Main.lua");
     g_Generic_Call(g_MuLuaQuestExp.GetLua(), "SetQuestInfo", ">");
     g_QuestExpManager.QuestExpItemInit();
-#endif
-#ifdef VM_PROTECT
-	VMEND
 #endif
 }
 

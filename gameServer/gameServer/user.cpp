@@ -3857,12 +3857,6 @@ short gObjAddSearch(SOCKET aSocket, char* ip)
 	{
 		if ( gObj[count].Connected == PLAYER_EMPTY )
 		{
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
-#ifdef VM_PROTECT
-	VMEND
-#endif
 			return count;
 		}
 
@@ -5868,12 +5862,6 @@ bool gObjLevelUp(LPOBJ lpObj, __int64 & addexp, int iMonsterType, int iEventType
 		}
 		LogAddTD(szMsg);
 	}
-#ifdef VM_PROTECT
-	VMBEGIN
-#endif
-#ifdef VM_PROTECT
-	VMEND
-#endif
 	return true;
 }
 
