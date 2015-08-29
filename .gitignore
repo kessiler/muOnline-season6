@@ -6,6 +6,8 @@ client/zClient/*.user
 client/*.user
 gameServer/*.suo
 gameServer/gameServer/*.user
+connectServer/*.suo
+connectServer/zConnectServer/*.user
 
 # SQL Server files
 dataServer/*.mdf
@@ -20,6 +22,10 @@ gameServer/*.mdf
 gameServer/*.sdf
 gameServer/*.ldf
 gameServer/*.opensdf
+connectServer/*.mdf
+connectServer/*.sdf
+connectServer/*.ldf
+connectServer/*.opensdf
 
 # Temporary files
 dataserver/ipch
@@ -39,3 +45,9 @@ gameServer/Release
 gameServer/gameServer/Release
 gameServer/Debug
 gameServer/gameServer/Debug
+
+connectServer/ipch
+connectServer/Release
+connectServer/zConnectServer/Release
+connectServer/Debug
+connectServer/zConnectServer/Debug

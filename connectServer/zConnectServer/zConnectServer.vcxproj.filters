@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Window">
+      <UniqueIdentifier>{64e964b8-ad4a-4db5-b370-9f034a2bca2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings">
+      <UniqueIdentifier>{547a18a2-4c36-431a-8acf-65cad3370a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Critical">
+      <UniqueIdentifier>{c8a5aa04-d814-4f2b-b770-ee55cd98d622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{027299c5-6b73-4c75-98e6-b02bc41b28c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\IOCP">
+      <UniqueIdentifier>{e9924e13-a316-4aa0-9a61-f5da76d1c083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Update">
+      <UniqueIdentifier>{e55214cf-c1b5-4b46-a67c-8a457f622d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Queue">
+      <UniqueIdentifier>{458083a3-dc63-4e44-a5e2-8880369a3195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol">
+      <UniqueIdentifier>{0ec8f4e9-73c4-4acf-97e0-e7a856f50de4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\UserSlot">
+      <UniqueIdentifier>{e9ac41ba-aac7-40e6-9417-cab4bf1c9912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other">
+      <UniqueIdentifier>{7c83ea23-a76a-4a5a-81c3-98fefe058ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\Util">
+      <UniqueIdentifier>{9020b98b-6289-4953-b012-34805eec16d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Init">
+      <UniqueIdentifier>{7970d813-50d3-4da2-bd6d-9269bb439073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\List">
+      <UniqueIdentifier>{d378c170-c2c5-4aad-b686-a0124c97325f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\WhiteList">
+      <UniqueIdentifier>{0ea4d815-14bf-4f27-a517-dc46597f3777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Other\BlackList">
+      <UniqueIdentifier>{003253e3-faaa-44b1-a547-aadd44ad0539}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="zConnectServer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zConnectServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Source Files\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Source Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="CriticalSec.h">
+      <Filter>Source Files\Critical</Filter>
+    </ClInclude>
+    <ClInclude Include="giocp.h">
+      <Filter>Source Files\Server\IOCP</Filter>
+    </ClInclude>
+    <ClInclude Include="WzUdp.h">
+      <Filter>Source Files\Server\Update</Filter>
+    </ClInclude>
+    <ClInclude Include="WzQueue.h">
+      <Filter>Source Files\Server\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>Source Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="UdpProtocol.h">
+      <Filter>Source Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="ProDef.h">
+      <Filter>Source Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Source Files\Server\UserSlot</Filter>
+    </ClInclude>
+    <ClInclude Include="winutil.h">
+      <Filter>Source Files\Other\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadScript.h">
+      <Filter>Source Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerInit.h">
+      <Filter>Source Files\Server\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerList.h">
+      <Filter>Source Files\Server\List</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteList.h">
+      <Filter>Source Files\Other\WhiteList</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackList.h">
+      <Filter>Source Files\Other\BlackList</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zConnectServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="CriticalSec.cpp">
+      <Filter>Source Files\Critical</Filter>
+    </ClCompile>
+    <ClCompile Include="giocp.cpp">
+      <Filter>Source Files\Server\IOCP</Filter>
+    </ClCompile>
+    <ClCompile Include="WzUdp.cpp">
+      <Filter>Source Files\Server\Update</Filter>
+    </ClCompile>
+    <ClCompile Include="WzQueue.cpp">
+      <Filter>Source Files\Server\Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol.cpp">
+      <Filter>Source Files\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="UdpProtocol.cpp">
+      <Filter>Source Files\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\Server\UserSlot</Filter>
+    </ClCompile>
+    <ClCompile Include="winutil.cpp">
+      <Filter>Source Files\Other\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerInit.cpp">
+      <Filter>Source Files\Server\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerList.cpp">
+      <Filter>Source Files\Server\List</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteList.cpp">
+      <Filter>Source Files\Other\WhiteList</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackList.cpp">
+      <Filter>Source Files\Other\BlackList</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="zConnectServer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
