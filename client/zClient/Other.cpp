@@ -177,7 +177,6 @@ void Other::Changer()
 
 int Other::GameLoad()
 {
-#if defined __BEREZNUK__ || __ALIEN__
 	pGameLoad();
 	// ----
 	switch(pGameResolutionMode)
@@ -226,9 +225,6 @@ int Other::GameLoad()
 	SetFloat((LPVOID)oCam_ClipGL, gCamera.Default.ClipGL + 200);
 	// ----
 	return 1;
-#else
-	return pGameLoad();
-#endif
 }
 // ----------------------------------------------------------------------------------------------
 
