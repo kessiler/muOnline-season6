@@ -866,7 +866,7 @@ void ProtocolCore(BYTE protoNum, BYTE * aRecv, int aLen, int aIndex, BOOL Encryp
 				FriendMemoDelReq((PMSG_FRIEND_MEMO_DEL_REQ *)aRecv, aIndex);
 				break;
 			case 0xC9:
-				FriendMemoListReq(aIndex);
+				FriendMemoListReq((FHP_FRIEND_MEMO_LIST *)aRecv, aIndex);//FriendMemoListReq(aIndex);
 				break;
 			case 0xCA:
 				FriendChatRoomCreateReq((PMSG_FRIEND_ROOMCREATE_REQ *)aRecv, aIndex);
@@ -1625,13 +1625,13 @@ void PChatProc(PMSG_CHATDATA * lpChat, short aIndex)
 		case '/':	// Command
 			if ( slen > 2 )
 			{
-				if(strcmp(&lpChat->chatmsg[1], "ÀÌµ¿ Ä®¸®¸¶") == 0) //season4 all changed
+				if(strcmp(&lpChat->chatmsg[1], "ì´ë™ ì¹¼ë¦¬ë§ˆ") == 0) //season4 all changed
 				{
 					if(IsOKPCBangBenefitAll(lpObj) != FALSE) //season4 add-on :)
 					{
 						if(gMoveCommand.MoveFree2Kalima(lpObj) != FALSE)
 						{
-							LogAddTD("[%s][%s] Use [/ÀÌµ¿ Ä®¸®¸¶] PCBANG",lpObj->AccountID, lpObj->Name);
+							LogAddTD("[%s][%s] Use [/ì´ë™ ì¹¼ë¦¬ë§ˆ] PCBANG",lpObj->AccountID, lpObj->Name);
 							return;
 						}
 					}
@@ -2164,7 +2164,7 @@ void CSPJoinIdPassRequestTEST(PMSG_IDPASS * lpMsg, int aIndex)
 	PHeadSetB((LPBYTE)&spMsg, 0x11, sizeof(spMsg));
 	spMsg.Number = aIndex;
 
-	wsprintf(szId, "½¸µ¹ÀÌ%d", logincounttest);
+	wsprintf(szId, "ìŠ›ëŒì´%d", logincounttest);
 	wsprintf(szPass, "m321", rand()%9);
 	LogAdd("login send : %s %s", szId, szPass);
 	
@@ -2322,7 +2322,7 @@ void CGPCharacterCreate( PMSG_CHARCREATE * lpMsg, int aIndex)
 
 	if ( !gCreateCharacter )
 	{
-		GCServerMsgStringSend("¼­¹öºÐÇÒ ±â°£¿¡´Â Ä³¸¯ÅÍ¸¦ »ý¼ºÇÒ¼ö ¾ø½À´Ï´Ù", aIndex, 1);
+		GCServerMsgStringSend("ì„œë²„ë¶„í•  ê¸°ê°„ì—ëŠ” ìºë¦­í„°ë¥¼ ìƒì„±í• ìˆ˜ ì—†ìŠµë‹ˆë‹¤", aIndex, 1);
 		JGCharacterCreateFailSend(aIndex, lpMsg->Name);
 
 		return;
@@ -11984,7 +11984,7 @@ void CGBeattackRecv(BYTE* lpRecv, int aIndex, int magic_send)
 		{
 			if ( lpObj->DurMagicKeyChecker.IsValidDurationTime(lpMsg->MagicKey) == FALSE )
 			{
-				LogAddC(0, "¡Ú¡Ú¡Ú¡Ú InValid DurationTime Key = %d ( Time : %d) [%d][%d]", 
+				LogAddC(0, "â˜…â˜…â˜…â˜… InValid DurationTime Key = %d ( Time : %d) [%d][%d]", 
 					lpMsg->MagicKey, 
 					lpObj->DurMagicKeyChecker.GetValidDurationTime(lpMsg->MagicKey),
 				lpObj->AccountID, 
@@ -11995,7 +11995,7 @@ void CGBeattackRecv(BYTE* lpRecv, int aIndex, int magic_send)
 			
 			if ( lpObj->DurMagicKeyChecker.IsValidCount(lpMsg->MagicKey) == FALSE )
 			{
-				LogAddC(0, "¡Ú¡Ú¡Ú¡Ú InValid VailidCount = %d ( Count : %d) [%d][%d]", 
+				LogAddC(0, "â˜…â˜…â˜…â˜… InValid VailidCount = %d ( Count : %d) [%d][%d]", 
 					lpMsg->MagicKey, 
 					lpObj->DurMagicKeyChecker.GetValidCount(lpMsg->MagicKey), 
 					lpObj->AccountID, 
@@ -14024,7 +14024,7 @@ void GCGetMutoNumRecv(PMSG_GETMUTONUMBER* lpMsg, int aIndex)
 	if ( gObj[aIndex].MutoNumber != 0 )
 	{
 		char msg[255];
-		wsprintf(msg, "ÀÌ¹Ì ·ç°¡µåÀÇ ¼ýÀÚ°¡ ÀÖ½À´Ï´Ù");
+		wsprintf(msg, "ì´ë¯¸ ë£¨ê°€ë“œì˜ ìˆ«ìžê°€ ìžˆìŠµë‹ˆë‹¤");
 		GCServerMsgStringSend(msg, aIndex, 1);
 		return;
 	}
@@ -14838,7 +14838,7 @@ void CGReqMoveOtherServer(PMSG_REQ_MOVE_OTHERSERVER * lpMsg, int aIndex)
 		lpObj->m_MoveOtherServer = false;
 
 		LogAddTD("[CharTrasfer] Fail (JoominNumber) [%s][%s]", lpObj->AccountID, lpObj->Name);
-		GCServerMsgStringSend("¹®Á¦ ¹ß»ý½Ã change@webzen.co.kr·Î ¹®ÀÇÇØ ÁÖ½Ã±â¹Ù¶ø´Ï´Ù", lpObj->m_Index, 1);
+		GCServerMsgStringSend("ë¬¸ì œ ë°œìƒì‹œ change@webzen.co.krë¡œ ë¬¸ì˜í•´ ì£¼ì‹œê¸°ë°”ëžë‹ˆë‹¤", lpObj->m_Index, 1);
 		return;
 	}
 
@@ -15206,7 +15206,7 @@ void GCGuildViewportInfo(PMSG_REQ_GUILDVIEWPORT * aRecv, int aIndex)
 	}
 	else
 	{
-		LogAddTD("¡Ú¡Ú¡Ù ±æµå Á¤º¸ Ã£À»¼ö ¾øÀ½. ÀÌ¸§ : [%s] ¹øÈ£ : %d", lpObj->Name, dwGuildNumber);
+		LogAddTD("â˜…â˜…â˜† ê¸¸ë“œ ì •ë³´ ì°¾ì„ìˆ˜ ì—†ìŒ. ì´ë¦„ : [%s] ë²ˆí˜¸ : %d", lpObj->Name, dwGuildNumber);
 	}
 }
 
@@ -15743,14 +15743,14 @@ void CGRelationShipReqKickOutUnionMember(PMSG_KICKOUT_UNIONMEMBER_REQ* aRecv, in
 	if ( gObjIsConnected(&gObj[aIndex]) == FALSE )
 	{
 		GCResultSend(aIndex, 0x51, 3);
-		MsgOutput(aIndex, "¡Ú Terminated User.");
+		MsgOutput(aIndex, "â˜… Terminated User.");
 		return;
 	}
 
 	if ( lpObj->lpGuild == NULL )
 	{
 		GCResultSend(aIndex, 0x51, 3);
-		MsgOutput(aIndex, "¡Ù Terminated Guild.");
+		MsgOutput(aIndex, "â˜† Terminated Guild.");
 		return;
 	}
 
