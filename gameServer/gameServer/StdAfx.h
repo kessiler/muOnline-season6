@@ -2,14 +2,15 @@
 // ----
 #pragma warning(disable: 4786)
 // ----
+#pragma comment(lib, "../lua/lib/lua5.1.lib")
+#pragma comment(lib, "../lua/lib/lua51.lib")
 #pragma comment(lib, "wsock32.lib" )
 #pragma comment(lib, "ws2_32.lib" )
 #pragma comment(lib, "COMCTL32.lib" )
-#pragma comment(lib, "../lua/lib/lua51.lib")
 // -------------------------------------------------------------------------------
 
 #define WIN32_LEAN_AND_MEAN
-#define _WIN32_WINNT			0x500
+#define _WIN32_WINNT			0x501
 // -------------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------------

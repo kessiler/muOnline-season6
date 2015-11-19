@@ -36,17 +36,7 @@
 #define MAKE_NUMBERW(x,y)  ( (WORD)(((BYTE)((y)&0xFF)) |   ((BYTE)((x)&0xFF)<<8 ))  )
 #define MAKE_NUMBERQW(x,y) ( (unsigned __int64)(((DWORD)((y)&0xFFFFFFFF)) | ((DWORD)((x)&0xFFFFFFFF)<<32))  )
 
-#ifndef _QWORD_DEFINED 
-#define _QWORD_DEFINED 
-typedef __int64 QWORD, *LPQWORD; 
-#endif
-
 #define MAKE_NUMBERDW(x,y) ( (DWORD)(((WORD)((y)&0xFFFF)) | ((WORD)((x)&0xFFFF)<<16))  )
-
-#ifndef _QWORD_DEFINED 
-#define _QWORD_DEFINED 
-typedef __int64 QWORD, *LPQWORD; 
-#endif
 
 #define MAKEQWORD(a, b)      ((__int64)(((DWORD)((__int64)(a) & 0xffffffff)) | ((__int64)((DWORD)((__int64)(b) & 0xffffffff))) << 32))  
 #define LODWORD(h)           ((DWORD)(__int64(h) & __int64(0xffffffff)))   

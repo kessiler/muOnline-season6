@@ -2947,7 +2947,7 @@ void CGMMng::CmdSummonChar(LPOBJ lpObj,char * szName)
 
 }
 
-int CGMMng::GetType(WORD wClass)
+WORD CGMMng::GetType(WORD wClass)
 {
 	WORD Type = 0xFF;
 
@@ -2966,7 +2966,7 @@ int CGMMng::GetType(WORD wClass)
 			break;
 		}
 	}
-
+	
 	return Type;
 }
 

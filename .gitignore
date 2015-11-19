@@ -8,6 +8,10 @@ gameServer/*.suo
 gameServer/gameServer/*.user
 connectServer/*.suo
 connectServer/zConnectServer/*.user
+client/.vs
+connectServer/.vs
+gameServer/.vs
+dataServer/.vs
 
 # SQL Server files
 dataServer/*.mdf

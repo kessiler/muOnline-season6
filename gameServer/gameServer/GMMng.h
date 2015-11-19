@@ -208,7 +208,7 @@ public:
 	void CmdClearItem(LPOBJ lpObj,int Dis);
 	void CmdClearInven(LPOBJ lpObj);
 	void CmdSummonChar(LPOBJ lpObj,char * szName);
-	int GetType(WORD wClass);
+	WORD GetType(WORD wClass);
 	void AddLevelUpPoints(int aIndex,unsigned long ulValue, short sType);
 private:
 
