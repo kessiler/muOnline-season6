@@ -597,7 +597,7 @@ void FriendMemoSend( PMSG_FRIEND_MEMO* lpMsg, int aIndex);
 void MngFriendMemoSend( PMSG_JG_MEMO_SEND* lpMsg);
 BOOL WithdrawUserMoney(LPSTR Type, struct OBJECTSTRUCT* lpObj, int Withdraw_Money);
 void FriendMemoSendResult( FHP_FRIEND_MEMO_SEND_RESULT* lpMsg);
-void FriendMemoListReq(int aIndex);
+void FriendMemoListReq(FHP_FRIEND_MEMO_LIST * lpMsg, int aIndex);//void FriendMemoListReq(int aIndex)
 void FriendMemoList( FHP_FRIEND_MEMO_LIST* lpMsg);
 void FriendMemoReadReq( PMSG_FRIEND_READ_MEMO_REQ* lpMsg, int aIndex);
 void FriendMemoRead( FHP_FRIEND_MEMO_RECV* lpMsg);

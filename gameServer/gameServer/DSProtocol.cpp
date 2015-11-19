@@ -1339,7 +1339,7 @@ void JGGetCharacterInfo( SDHP_DBCHAR_INFORESULT * lpMsg)
 
 	if ( lpObj->Money < 0 )
 	{
-		LogAddC(2, "¡Ú¡Ù ZEN MODIFY ¡Ù¡Ú [%s][%s] %d -> 0", szName, gObj[aIndex].AccountID, lpObj->Money);
+		LogAddC(2, "Â¡ÃšÂ¡Ã™ ZEN MODIFY Â¡Ã™Â¡Ãš [%s][%s] %d -> 0", szName, gObj[aIndex].AccountID, lpObj->Money);
 		lpObj->Money = 0;
 	}
 
@@ -2872,14 +2872,14 @@ void DGMoveOtherServer(SDHP_CHARACTER_TRANSFER_RESULT * lpMsg)
 		
 		lpObj->m_MoveOtherServer = 0;
 		
-		GCServerMsgStringSend("?®?¦ ??»??? change@webzen.co.kr·? ?®???? ????±???¶?????",lpObj->m_Index, 1);
+		GCServerMsgStringSend("?Â®?Â¦ ??Â»??? change@webzen.co.krÂ·? ?Â®???? ????Â±???Â¶?????",lpObj->m_Index, 1);
 		return;
 	}
 
 	LogAddTD("[CharTrasfer] Success [%s][%s] (%d)",	lpObj->AccountID, lpObj->Name, lpMsg->Result);
 
-	GCServerMsgStringSend("?????? ??·?µ?????.", lpObj->m_Index, 1);
-	GCServerMsgStringSend("???? ?­??·? ??????????±? ??¶?????.", lpObj->m_Index, 1);
+	GCServerMsgStringSend("?????? ??Â·?Âµ?????.", lpObj->m_Index, 1);
+	GCServerMsgStringSend("???? ?Â­??Â·? ??????????Â±? ??Â¶?????.", lpObj->m_Index, 1);
 
 	GJSetCharacterInfo(lpObj, lpObj->m_Index, 0, 0);
 
@@ -5698,7 +5698,7 @@ void DGAccountInfoStateRecv(LPPMSG_ANS_ACCOUNTINFO_STATUS lpMsg)
 
 	if(lpMsg->btResultRageFighter == 1)
 	{
-		gObj[aIndex].Summoner = 1;
+		gObj[aIndex].RageFighter = 1; // Preview gObj[aIndex].Summoner
 	}
 
 	PMSG_UPD_ACCOUNTINFO_CREATE pMsg;

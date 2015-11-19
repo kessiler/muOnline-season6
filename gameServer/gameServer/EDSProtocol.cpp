@@ -2712,7 +2712,7 @@ struct FHP_FRIEND_MEMO_LIST_REQ
 
 
 
-void FriendMemoListReq(int aIndex)
+void FriendMemoListReq(FHP_FRIEND_MEMO_LIST * lpMsg, int aIndex)//void FriendMemoListReq(int aIndex)
 {
 	if ( !gObjIsConnectedGP(aIndex))
 	{
